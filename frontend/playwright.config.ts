@@ -1,0 +1,4 @@
+import {defineConfig} from '@playwright/test';
+const port=process.env.SHELFSIGNAL_TEST_PORT||'8000';
+const baseURL=`http://127.0.0.1:${port}`;
+export default defineConfig({testDir:'tests',timeout:process.env.SHELFSIGNAL_CLOUD_TEST?180000:60000,expect:{timeout:process.env.SHELFSIGNAL_CLOUD_TEST?20000:5000},workers:1,webServer:{command:`".venv\\Scripts\\python.exe" -m uvicorn backend.app.main:app --host 127.0.0.1 --port ${port}`,cwd:'..',url:baseURL+'/health',reuseExistingServer:!!process.env.SHELFSIGNAL_REUSE_SERVER,env:{DATA_DIR:'data/browser-test'},timeout:30000},use:{baseURL,viewport:{width:1440,height:1100},screenshot:'only-on-failure'},reporter:[['list'],['json',{outputFile:process.env.SHELFSIGNAL_CLOUD_TEST?'../docs/evidence/playwright-aws.json':'../docs/evidence/playwright.json'}]]});

@@ -1,0 +1,18 @@
+{
+  "verified_at": "2026-10-27T00:54:59.187117+00:00",
+  "account": "961408846263",
+  "region": "us-west-2",
+  "stack": "shelfsignal",
+  "image_uri": "961408846263.dkr.ecr.us-west-2.amazonaws.com/shelfsignal@sha256:bb080fc303e24aea308c008dc52f826ca742c7641479375a67439bae25046765",
+  "source_sha256": "d626cb80495cbd2f7ce09e5cd0bcd4e1cd5ced9797df0bd1c7ff06cad2363374",
+  "build_id": "shelfsignal-build:4c447610-9ccf-4b9e-ad08-ce1643c5feaa",
+  "build_status": "SUCCEEDED",
+  "outputs": {
+    "FunctionName": "shelfsignal-processor",
+    "ImageBucket": "shelfsignal-images-syjqfcxt3azu",
+    "FunctionUrl": "https://jxjp7jcl44devwaqapkazj662i0xsnup.lambda-url.us-west-2.on.aws/",
+    "InspectionTable": "shelfsignal-Inspections-6GYALLRX51C7"
+  },
+  "runtime_smoke_test": "passed",
+  "runtime_smoke_verified_at": "2026-10-27T01:00:17.718849+00:00"
+}

@@ -1,0 +1,95 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: ShelfSignal protected OpenCV 5 inspection service
+Parameters:
+  ImageUri:
+    Type: String
+Resources:
+  Images:
+    Type: AWS::S3::Bucket
+    Properties:
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        IgnorePublicAcls: true
+        BlockPublicPolicy: true
+        RestrictPublicBuckets: true
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      LifecycleConfiguration:
+        Rules:
+          - Id: retention
+            Status: Enabled
+            ExpirationInDays: 30
+            AbortIncompleteMultipartUpload:
+              DaysAfterInitiation: 1
+  ImagesPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref Images
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Deny
+            Principal: '*'
+            Action: 's3:*'
+            Resource:
+              - !GetAtt Images.Arn
+              - !Sub '${Images.Arn}/*'
+            Condition:
+              Bool:
+                aws:SecureTransport: false
+  Inspections:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+      SSESpecification:
+        SSEEnabled: true
+      TimeToLiveSpecification:
+        AttributeName: expires
+        Enabled: true
+  Processor:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: shelfsignal-processor
+      PackageType: Image
+      ImageUri: !Ref ImageUri
+      Architectures: [x86_64]
+      MemorySize: 2048
+      Timeout: 30
+      FunctionUrlConfig:
+        AuthType: AWS_IAM
+      Environment:
+        Variables:
+          IMAGE_BUCKET: !Ref Images
+          INSPECTION_TABLE: !Ref Inspections
+      Policies:
+        - Version: '2012-10-17'
+          Statement:
+            - Effect: Allow
+              Action: [s3:GetObject, s3:PutObject]
+              Resource: !Sub '${Images.Arn}/*'
+            - Effect: Allow
+              Action: [dynamodb:GetItem, dynamodb:PutItem]
+              Resource: !GetAtt Inspections.Arn
+  Logs:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: /aws/lambda/shelfsignal-processor
+      RetentionInDays: 7
+Outputs:
+  FunctionName:
+    Value: !Ref Processor
+  FunctionUrl:
+    Value: !GetAtt ProcessorUrl.FunctionUrl
+  ImageBucket:
+    Value: !Ref Images
+  InspectionTable:
+    Value: !Ref Inspections

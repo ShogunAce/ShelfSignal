@@ -1,0 +1,135 @@
+{
+  "build_id": "shelfsignal-build:4c447610-9ccf-4b9e-ad08-ce1643c5feaa",
+  "status": "SUCCEEDED",
+  "environment_type": "LINUX_CONTAINER",
+  "compute_type": "BUILD_GENERAL1_SMALL",
+  "phases": [
+    {
+      "phaseType": "SUBMITTED",
+      "phaseStatus": "SUCCEEDED",
+      "startTime": "2026-10-26 17:53:15.442000-07:00",
+      "endTime": "2026-10-26 17:53:15.575000-07:00",
+      "durationInSeconds": 0
+    },
+    {
+      "phaseType": "QUEUED",
+      "phaseStatus": "SUCCEEDED",
+      "startTime": "2026-10-26 17:53:15.575000-07:00",
+      "endTime": "2026-10-26 17:53:16.194000-07:00",
+      "durationInSeconds": 0
+    },
+    {
+      "phaseType": "PROVISIONING",
+      "phaseStatus": "SUCCEEDED",
+      "startTime": "2026-10-26 17:53:16.194000-07:00",
+      "endTime": "2026-10-26 17:53:23.334000-07:00",
+      "durationInSeconds": 7,
+      "contexts": [
+        {
+          "statusCode": "",
+          "message": ""
+        }
+      ]
+    },
+    {
+      "phaseType": "DOWNLOAD_SOURCE",
+      "phaseStatus": "SUCCEEDED",
+      "startTime": "2026-10-26 17:53:23.334000-07:00",
+      "endTime": "2026-10-26 17:53:24.912000-07:00",
+      "durationInSeconds": 1,
+      "contexts": [
+        {
+          "statusCode": "",
+          "message": ""
+        }
+      ]
+    },
+    {
+      "phaseType": "INSTALL",
+      "phaseStatus": "SUCCEEDED",
+      "startTime": "2026-10-26 17:53:24.912000-07:00",
+      "endTime": "2026-10-26 17:53:24.977000-07:00",
+      "durationInSeconds": 0,
+      "contexts": [
+        {
+          "statusCode": "",
+          "message": ""
+        }
+      ]
+    },
+    {
+      "phaseType": "PRE_BUILD",
+      "phaseStatus": "SUCCEEDED",
+      "startTime": "2026-10-26 17:53:24.977000-07:00",
+      "endTime": "2026-10-26 17:53:39.120000-07:00",
+      "durationInSeconds": 14,
+      "contexts": [
+        {
+          "statusCode": "",
+          "message": ""
+        }
+      ]
+    },
+    {
+      "phaseType": "BUILD",
+      "phaseStatus": "SUCCEEDED",
+      "startTime": "2026-10-26 17:53:39.120000-07:00",
+      "endTime": "2026-10-26 17:54:01.089000-07:00",
+      "durationInSeconds": 21,
+      "contexts": [
+        {
+          "statusCode": "",
+          "message": ""
+        }
+      ]
+    },
+    {
+      "phaseType": "POST_BUILD",
+      "phaseStatus": "SUCCEEDED",
+      "startTime": "2026-10-26 17:54:01.089000-07:00",
+      "endTime": "2026-10-26 17:54:12.283000-07:00",
+      "durationInSeconds": 11,
+      "contexts": [
+        {
+          "statusCode": "",
+          "message": ""
+        }
+      ]
+    },
+    {
+      "phaseType": "UPLOAD_ARTIFACTS",
+      "phaseStatus": "SUCCEEDED",
+      "startTime": "2026-10-26 17:54:12.283000-07:00",
+      "endTime": "2026-10-26 17:54:12.329000-07:00",
+      "durationInSeconds": 0,
+      "contexts": [
+        {
+          "statusCode": "",
+          "message": ""
+        }
+      ]
+    },
+    {
+      "phaseType": "FINALIZING",
+      "phaseStatus": "SUCCEEDED",
+      "startTime": "2026-10-26 17:54:12.329000-07:00",
+      "endTime": "2026-10-26 17:54:12.631000-07:00",
+      "durationInSeconds": 0,
+      "contexts": [
+        {
+          "statusCode": "",
+          "message": ""
+        }
+      ]
+    },
+    {
+      "phaseType": "COMPLETED",
+      "startTime": "2026-10-26 17:54:12.631000-07:00"
+    }
+  ],
+  "runtime_and_test_log_lines": [
+    "[Container] 2026/10/27 00:53:39.131843 Running command docker build --platform linux/amd64 -f infrastructure/Dockerfile -t \"$IMAGE_URI\" .",
+    "#12 4.855 19 passed, 2 warnings in 4.25s",
+    "5.0.0 2.4.3 x86_64"
+  ]
+}

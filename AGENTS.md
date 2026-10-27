@@ -1,0 +1,11 @@
+# ShelfSignal invariants
+- OpenCV major version must be 5 for release readiness.
+- Predictions must never consume ground-truth fixture labels.
+- Human approval is required before creating a task; approval is not completion.
+- Preserve originals and persist every transition and tool event.
+- Reject uncertain alignment and quality; heuristic scores are not probabilities.
+- Run pytest, synthetic evaluation, frontend build and browser workflow after relevant changes.
+- Keep credentials out of source, browser bundles and logs. Cloud processing is authenticated.
+- No fabricated metrics, deployments, videos or user research.
+- Scope: reference-based shelf inspection and visual follow-up only.
+- Done means executed local loop, verified AWS workload, measured evaluation and accurate documentation.

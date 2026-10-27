@@ -1,0 +1,170 @@
+[
+  {
+    "seed": 0,
+    "kind": "refilled",
+    "expected": "VERIFIED_VISUALLY",
+    "outcome": "VERIFIED_VISUALLY",
+    "correct": true
+  },
+  {
+    "seed": 0,
+    "kind": "still_empty",
+    "expected": "UNRESOLVED",
+    "outcome": "UNRESOLVED",
+    "correct": true
+  },
+  {
+    "seed": 0,
+    "kind": "blur",
+    "expected": "INCONCLUSIVE",
+    "outcome": "INCONCLUSIVE",
+    "correct": true
+  },
+  {
+    "seed": 1,
+    "kind": "refilled",
+    "expected": "VERIFIED_VISUALLY",
+    "outcome": "VERIFIED_VISUALLY",
+    "correct": true
+  },
+  {
+    "seed": 1,
+    "kind": "still_empty",
+    "expected": "UNRESOLVED",
+    "outcome": "UNRESOLVED",
+    "correct": true
+  },
+  {
+    "seed": 1,
+    "kind": "blur",
+    "expected": "INCONCLUSIVE",
+    "outcome": "INCONCLUSIVE",
+    "correct": true
+  },
+  {
+    "seed": 2,
+    "kind": "refilled",
+    "expected": "VERIFIED_VISUALLY",
+    "outcome": "VERIFIED_VISUALLY",
+    "correct": true
+  },
+  {
+    "seed": 2,
+    "kind": "still_empty",
+    "expected": "UNRESOLVED",
+    "outcome": "UNRESOLVED",
+    "correct": true
+  },
+  {
+    "seed": 2,
+    "kind": "blur",
+    "expected": "INCONCLUSIVE",
+    "outcome": "INCONCLUSIVE",
+    "correct": true
+  },
+  {
+    "seed": 3,
+    "kind": "refilled",
+    "expected": "VERIFIED_VISUALLY",
+    "outcome": "VERIFIED_VISUALLY",
+    "correct": true
+  },
+  {
+    "seed": 3,
+    "kind": "still_empty",
+    "expected": "UNRESOLVED",
+    "outcome": "UNRESOLVED",
+    "correct": true
+  },
+  {
+    "seed": 3,
+    "kind": "blur",
+    "expected": "INCONCLUSIVE",
+    "outcome": "INCONCLUSIVE",
+    "correct": true
+  },
+  {
+    "seed": 4,
+    "kind": "refilled",
+    "expected": "VERIFIED_VISUALLY",
+    "outcome": "VERIFIED_VISUALLY",
+    "correct": true
+  },
+  {
+    "seed": 4,
+    "kind": "still_empty",
+    "expected": "UNRESOLVED",
+    "outcome": "UNRESOLVED",
+    "correct": true
+  },
+  {
+    "seed": 4,
+    "kind": "blur",
+    "expected": "INCONCLUSIVE",
+    "outcome": "INCONCLUSIVE",
+    "correct": true
+  },
+  {
+    "seed": 5,
+    "kind": "refilled",
+    "expected": "VERIFIED_VISUALLY",
+    "outcome": "VERIFIED_VISUALLY",
+    "correct": true
+  },
+  {
+    "seed": 5,
+    "kind": "still_empty",
+    "expected": "UNRESOLVED",
+    "outcome": "UNRESOLVED",
+    "correct": true
+  },
+  {
+    "seed": 5,
+    "kind": "blur",
+    "expected": "INCONCLUSIVE",
+    "outcome": "INCONCLUSIVE",
+    "correct": true
+  },
+  {
+    "seed": 6,
+    "kind": "refilled",
+    "expected": "VERIFIED_VISUALLY",
+    "outcome": "VERIFIED_VISUALLY",
+    "correct": true
+  },
+  {
+    "seed": 6,
+    "kind": "still_empty",
+    "expected": "UNRESOLVED",
+    "outcome": "UNRESOLVED",
+    "correct": true
+  },
+  {
+    "seed": 6,
+    "kind": "blur",
+    "expected": "INCONCLUSIVE",
+    "outcome": "INCONCLUSIVE",
+    "correct": true
+  },
+  {
+    "seed": 7,
+    "kind": "refilled",
+    "expected": "VERIFIED_VISUALLY",
+    "outcome": "VERIFIED_VISUALLY",
+    "correct": true
+  },
+  {
+    "seed": 7,
+    "kind": "still_empty",
+    "expected": "UNRESOLVED",
+    "outcome": "UNRESOLVED",
+    "correct": true
+  },
+  {
+    "seed": 7,
+    "kind": "blur",
+    "expected": "INCONCLUSIVE",
+    "outcome": "INCONCLUSIVE",
+    "correct": true
+  }
+]
