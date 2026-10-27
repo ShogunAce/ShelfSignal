@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-27T01:06:42.048492+00:00",
+  "checked_at": "2026-10-27T01:18:23.355043+00:00",
   "engineering_gates_A_to_F": "passed",
   "submission_documents": 11,
   "pytest_passed": 19,
@@ -53,9 +53,116 @@
   },
   "cloud_image_uri": "961408846263.dkr.ecr.us-west-2.amazonaws.com/shelfsignal@sha256:bb080fc303e24aea308c008dc52f826ca742c7641479375a67439bae25046765",
   "local_runtime_matches_deployed_archive": true,
+  "demo_video": {
+    "recorded_at": "2026-10-27T01:11:56.098Z",
+    "rendered_at": "2026-10-27T01:15:17.761609+00:00",
+    "duration_seconds": 254.712044,
+    "width": 1920,
+    "height": 1080,
+    "bytes": 12327897,
+    "sha256": "fe37e7f49b691de295f47feeda425dc901a7db0d2482856dff4ab5552199736d",
+    "team_credit": "Kenosis Interactive",
+    "narration": "Microsoft Zira Desktop, synthesized locally",
+    "footage": "Actual AWS application recording using synthetic shelf photographs; explanatory title cards are edited in.",
+    "inspection_id": "068c6698-9571-40e9-a57c-eda378cb4a34",
+    "chapters": [
+      {
+        "id": "01-intro",
+        "start": 0,
+        "duration": 20.585,
+        "narration": "ShelfSignal is a reference based shelf inspection workspace for a small store shift supervisor. It connects a possible gap to human review and visual follow up. This demonstration uses synthetic shelf photographs and the real authenticated AWS deployment. It does not identify products or know inventory quantities.",
+        "type": "card"
+      },
+      {
+        "id": "02-baseline",
+        "start": 20.585,
+        "duration": 19.265,
+        "narration": "We begin by loading a reference shelf and an inspection photograph. The boxes define expected product positions. They do not tell the detector which position is empty. The header identifies AWS Lambda and OpenCV five. Original photographs are preserved separately from overlays.",
+        "type": "capture"
+      },
+      {
+        "id": "03-analysis",
+        "start": 39.85,
+        "duration": 22.867,
+        "narration": "Analyze shelf runs OpenCV on AWS. ORB features and a RANSAC homography align the images, then regional edge and texture changes identify possible occupancy loss. Position R two, two is marked for review. The score is a heuristic, not a calibrated probability. Reliable gap evidence leads to a restock proposal.",
+        "type": "capture"
+      },
+      {
+        "id": "04-approval",
+        "start": 62.717,
+        "duration": 19.698,
+        "narration": "The proposal is not an executed task. Approval is a separate operator action, enforced on the server. Here the demo operator approves the synthetic proposal. A task now exists, but physical completion remains explicitly unasserted. A follow up photograph is still required.",
+        "type": "capture"
+      },
+      {
+        "id": "05-followup",
+        "start": 82.415,
+        "duration": 20.539,
+        "narration": "We load a synthetic refill and verify the original regions. The same OpenCV engine compares the follow up against the reference. The original candidate now appears visually resolved. This is evidence about appearance, not proof of a physical restock or the correct product. The before and after measurements remain visible.",
+        "type": "capture"
+      },
+      {
+        "id": "06-trace",
+        "start": 102.954,
+        "duration": 21.582,
+        "narration": "Every transition is persisted with its tool, policy rule, image references and observed features. The trace connects the original evidence, operator approval and final verification. Reloading preserves the result. Separate cloud checks verified original image hashes and the full stored trace, and confirmed that unsigned requests are rejected.",
+        "type": "capture"
+      },
+      {
+        "id": "07-rescan",
+        "start": 124.536,
+        "duration": 17.807,
+        "narration": "Different visual evidence changes the next action. A blurred capture fails the quality gate and requests a rescan. There is no approval control. The agent does not override weak evidence. Blurred follow up photographs are similarly classified as inconclusive.",
+        "type": "capture"
+      },
+      {
+        "id": "08-nochange",
+        "start": 142.343,
+        "duration": 13.787,
+        "narration": "For an unchanged shelf, the workflow keeps the evidence ready and proposes no restock task. These branches come from measured OpenCV outputs, not a scripted success response or fixture labels.",
+        "type": "capture"
+      },
+      {
+        "id": "09-architecture",
+        "start": 156.13,
+        "duration": 28.05,
+        "narration": "The React workspace calls a loopback FastAPI server. In cloud mode, that server signs AWS requests. The same OpenCV and policy code runs in an x eighty six Lambda container. Private S three stores originals, overlays and immutable trace snapshots. Dynamo D B tracks the current revision. Credentials stay out of the browser. CodeBuild ran all nineteen backend tests in Linux before deployment.",
+        "type": "card"
+      },
+      {
+        "id": "10-results",
+        "start": 184.18,
+        "duration": 25.405,
+        "narration": "The reproducible benchmark contains eighty eight synthetic inspection cases. It measured forty eight true positives, eight false positives, and no false negatives: eighty five point seven percent precision and one hundred percent recall. Expected action agreement was eighty out of eighty eight. All twenty four follow up classifications were correct. These results do not establish real store performance.",
+        "type": "card"
+      },
+      {
+        "id": "11-failure",
+        "start": 209.585,
+        "duration": 21.776,
+        "narration": "The eight false positives are flat occlusions. Covering a product can remove edges and texture in the same way as an empty position. ShelfSignal can mistake that appearance for a gap. Human review is essential. The next validation step is a consented real shelf dataset with independent test cases, rather than a claim of production accuracy.",
+        "type": "card"
+      },
+      {
+        "id": "12-close",
+        "start": 231.361,
+        "duration": 23.265,
+        "narration": "The source includes pinned dependencies, build and deployment instructions, a technical report, measured evaluation and real execution evidence. ShelfSignal demonstrates a complete visual decision loop with human control. The project was implemented with OpenAI Codex assistance. This video uses synthesized narration over an actual AWS workflow recording.",
+        "type": "card"
+      }
+    ]
+  },
+  "source_publication": {
+    "verified_at": "2026-10-27T01:18:19.225529+00:00",
+    "repository": "https://github.com/ShogunAce/ShelfSignal",
+    "commit": "62e7a46a21d13299ad359ba5b61620ba912e64c0",
+    "visibility": "public",
+    "video_url": "https://raw.githubusercontent.com/ShogunAce/ShelfSignal/main/docs/demo/ShelfSignal-demo.mp4",
+    "video_http_status": 200,
+    "video_content_type": "application/octet-stream"
+  },
   "manual_submission_remaining": [
-    "record and upload demo video",
-    "publish or attach source",
+    "confirm portal-compatible video hosting",
     "arrange judge access",
     "complete competition portal entry"
   ],

@@ -9,6 +9,8 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def main():
     files=list(ROOT.glob('*.md'))
+    copy=ROOT/'docs/submission/DEVPOST_COPY.md'
+    if copy.exists():files.append(copy)
     files += [ROOT/name for name in ('.gitignore','.env.example','requirements.txt','requirements.lock.txt','pytest.ini')]
     excluded={'node_modules','dist','__pycache__','test-results','playwright-report','submission'}
     for directory in ('backend','frontend','fixtures/generator','evaluation','infrastructure','scripts','docs'):

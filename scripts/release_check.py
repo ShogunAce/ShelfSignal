@@ -40,7 +40,7 @@ def main():
             if name.startswith('backend/') or name in {'requirements.lock.txt','requirements.txt'}:
                 assert z.read(name)==(ROOT/name).read_bytes(),'Local source changed since deployment: '+name
     assert (ROOT/'frontend/dist/index.html').is_file()
-    report={'checked_at':datetime.now(timezone.utc).isoformat(),'engineering_gates_A_to_F':'passed','submission_documents':len(documents),'pytest_passed':int(suite.attrib['tests']),'browser':browser,'synthetic_evaluation':summary,'aws_runtime':cloud['runtime'],'cloud_image_uri':cloud['image_uri'],'local_runtime_matches_deployed_archive':True,'manual_submission_remaining':['record and upload demo video','publish or attach source','arrange judge access','complete competition portal entry'],'competition_submitted':False}
+    report={'checked_at':datetime.now(timezone.utc).isoformat(),'engineering_gates_A_to_F':'passed','submission_documents':len(documents),'pytest_passed':int(suite.attrib['tests']),'browser':browser,'synthetic_evaluation':summary,'aws_runtime':cloud['runtime'],'cloud_image_uri':cloud['image_uri'],'local_runtime_matches_deployed_archive':True,'demo_video':read('docs/demo/video-evidence.json') if (ROOT/'docs/demo/video-evidence.json').exists() else None,'source_publication':read('docs/evidence/publication.json') if (ROOT/'docs/evidence/publication.json').exists() else None,'manual_submission_remaining':['confirm portal-compatible video hosting','arrange judge access','complete competition portal entry'],'competition_submitted':False}
     (ROOT/'docs/evidence/release-check.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
     print(json.dumps(report,indent=2))
 
