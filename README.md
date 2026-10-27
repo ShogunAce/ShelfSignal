@@ -11,7 +11,9 @@ Set-Location C:\Users\coled\Projects\ShelfSignal
 .\scripts\start.ps1
 ```
 
-Open http://127.0.0.1:8000. Select **One missing position**, **Load example**, then **Analyze shelf**. Review the measured overlay and heuristic score, approve the task, load the synthetic refill, and verify. Try **Blurred capture** and **No change** to see different policy actions. All examples are explicitly synthetic.
+Open http://127.0.0.1:8000 for the landing page, then choose **Open workspace** (or go directly to http://127.0.0.1:8000/workspace/). Select **AI shelf · Missing item** (the default), **Load example**, then **Analyze shelf**. This loads the ElevenLabs-generated reference, missing-item image and 18 reference position boxes. Review R2-3, approve the synthetic task, click **Load synthetic refill**, and verify. Try **AI shelf · Blurred capture** and **AI shelf · No change** to see different policy actions. The original procedural fixtures remain in the picker. All examples are explicitly synthetic.
+
+The refill button stays associated with the loaded reference across refreshes and picker changes. For manually uploaded shelves, upload a matching follow-up yourself. ElevenLabs assets and provenance are in `fixtures/elevenlabs`; bundled UI assets are in `frontend/public/examples/elevenlabs`. Images are generated ahead of time; inspection still runs OpenCV without a model API call.
 
 For the authenticated AWS workload:
 
@@ -21,6 +23,8 @@ aws login --profile shelfsignal --region us-west-2
 ```
 
 The UI stays on localhost; processing and persistence use Lambda, S3 and DynamoDB. Confirm the header says **AWS Lambda**. Restart the server without `-Cloud` to return to local processing. The server never silently falls back from AWS to local processing.
+
+The landing page uses original ShelfSignal copy, ElevenLabs-generated retail imagery, an interactive synthetic image comparison, and a real workspace preview. Media prompts, preserved originals and design notes are in `docs/design/landing/`.
 
 ## Fresh installation
 
@@ -36,14 +40,14 @@ Prerequisites: Python 3.12, Node.js 22 or newer, and AWS CLI v2.32+ for cloud mo
 
 Local runtime: Python 3.12.15, OpenCV 5.0.0 from `opencv-python-headless==5.0.0.93`, NumPy 2.4.3. The container build rejects non-5 OpenCV and non-x86_64 architecture.
 
-Executed checks: 19 backend tests, six local browser workflows, six AWS browser workflows, and the real AWS storage/authentication smoke test passed. Runtime details and complete traces are in `docs/evidence/`. A source/evidence handoff ZIP is generated with `scripts/package_submission.py` under `docs/submission/`; no credentials or user image directory are included.
+Executed checks: 19 backend tests, fourteen local browser workflows, fourteen AWS browser workflows, and the real AWS storage/authentication smoke test passed. The browser suites include the ElevenLabs examples and byte-for-byte checks of their uploads and matching refill. Runtime details and complete traces are in `docs/evidence/`. A source/evidence handoff ZIP is generated with `scripts/package_submission.py` under `docs/submission/`; no credentials or user image directory are included.
 
 The measured synthetic benchmark contains 88 inspections and 24 follow-ups. Precision is 85.7%, recall 100%, and action agreement 90.9%. A flat object covering a product can look like a gap: eight such false positives remain. These numbers do not establish real-store performance. See [EVALUATION.md](EVALUATION.md), including the exact run outputs.
 
 ## Project map
 
 - `backend/app`: FastAPI, explicit policy workflow, OpenCV engine and repository adapters.
-- `frontend`: React/TypeScript/Vite/Tailwind workspace and browser tests.
+- `frontend`: React/TypeScript/Vite/Tailwind landing page, inspection workspace and browser tests.
 - `fixtures/generator`: independent seeded synthetic image generator.
 - `evaluation`: evaluator and measured JSON/CSV results.
 - `infrastructure`: SAM service, CodeBuild container build, optional new-account bootstrap.

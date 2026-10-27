@@ -1,0 +1,247 @@
+{
+  "id": "0f37df36-2b11-4eac-8c97-e8bfd4234c18",
+  "revision": 6,
+  "state": "EVIDENCE_READY",
+  "images": {
+    "reference": "0f37df36-2b11-4eac-8c97-e8bfd4234c18/9d5f3bf1-bc6d-4621-9f7c-94fd1cb31887/reference",
+    "image": "0f37df36-2b11-4eac-8c97-e8bfd4234c18/f3c92ed1-4564-487a-b9ff-be7877a36264/image",
+    "overlay": "0f37df36-2b11-4eac-8c97-e8bfd4234c18/1e4cc0d8-6efe-4e83-a020-b72500d08758/overlay.png"
+  },
+  "image_history": [
+    {
+      "kind": "reference",
+      "key": "0f37df36-2b11-4eac-8c97-e8bfd4234c18/9d5f3bf1-bc6d-4621-9f7c-94fd1cb31887/reference",
+      "bytes": 2095801,
+      "sha256": "614afa8f9606149beecb42c8b9d14f73da91b81ee578acc51a1a3fc99961b158"
+    },
+    {
+      "kind": "image",
+      "key": "0f37df36-2b11-4eac-8c97-e8bfd4234c18/f3c92ed1-4564-487a-b9ff-be7877a36264/image",
+      "bytes": 479438,
+      "sha256": "b3cb3363e3e0dc9ea5a7e5970611784a95079eae055ce8f0be8e52a75c127120"
+    }
+  ],
+  "regions": [
+    {
+      "id": "P66601",
+      "box": [
+        0.37109375,
+        0.3680555932774205,
+        0.11328125,
+        0.24027783058838864
+      ]
+    }
+  ],
+  "analysis": {
+    "thresholds": {
+      "min_sharpness": 45,
+      "min_matches": 18,
+      "min_inlier_ratio": 0.45,
+      "max_reprojection_px": 2.5,
+      "gap_score": 0.48,
+      "min_changed_fraction": 0.18
+    },
+    "algorithm": "reference-occupancy-1.0",
+    "opencv": "5.0.0",
+    "quality_ok": true,
+    "diagnostics": {
+      "sharpness": 3148.63,
+      "matches": 3379,
+      "inlier_ratio": 0.999,
+      "reprojection_error": 0.003
+    },
+    "candidates": [],
+    "regions": [
+      {
+        "id": "P66601",
+        "box": [
+          0.37109375,
+          0.3680555932774205,
+          0.11328125,
+          0.24027783058838864
+        ],
+        "score": 0.004,
+        "edge_ratio": 0.993,
+        "texture_ratio": 0.999,
+        "changed_fraction": 0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      }
+    ],
+    "reason": "No significant occupancy loss detected.",
+    "duration_ms": 344.51
+  },
+  "candidates": [],
+  "events": [
+    {
+      "event_id": "b6e6b18c-74fc-422c-b048-c61e983a66c4",
+      "inspection_id": "0f37df36-2b11-4eac-8c97-e8bfd4234c18",
+      "timestamp": "2026-10-27T03:49:19.529212+00:00",
+      "tool": "create_inspection",
+      "input_references": {},
+      "observed_features": {},
+      "previous_state": "CREATED",
+      "decision": "CREATED",
+      "policy_rule": "operator_started",
+      "model_invocation": "disabled",
+      "result": "Inspection created",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "5bbc1cdd-4182-45bb-a9bc-9e53db080554",
+      "inspection_id": "0f37df36-2b11-4eac-8c97-e8bfd4234c18",
+      "timestamp": "2026-10-27T03:49:22.680891+00:00",
+      "tool": "upload_reference",
+      "input_references": {
+        "reference": "0f37df36-2b11-4eac-8c97-e8bfd4234c18/9d5f3bf1-bc6d-4621-9f7c-94fd1cb31887/reference"
+      },
+      "observed_features": {
+        "kind": "reference",
+        "key": "0f37df36-2b11-4eac-8c97-e8bfd4234c18/9d5f3bf1-bc6d-4621-9f7c-94fd1cb31887/reference",
+        "bytes": 2095801,
+        "sha256": "614afa8f9606149beecb42c8b9d14f73da91b81ee578acc51a1a3fc99961b158"
+      },
+      "previous_state": "CREATED",
+      "decision": "CREATED",
+      "policy_rule": "original_preserved",
+      "model_invocation": "disabled",
+      "result": "Original photograph preserved",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "94fe858a-4cac-42c7-9047-f7c664836323",
+      "inspection_id": "0f37df36-2b11-4eac-8c97-e8bfd4234c18",
+      "timestamp": "2026-10-27T03:49:24.706803+00:00",
+      "tool": "upload_image",
+      "input_references": {
+        "reference": "0f37df36-2b11-4eac-8c97-e8bfd4234c18/9d5f3bf1-bc6d-4621-9f7c-94fd1cb31887/reference",
+        "image": "0f37df36-2b11-4eac-8c97-e8bfd4234c18/f3c92ed1-4564-487a-b9ff-be7877a36264/image"
+      },
+      "observed_features": {
+        "kind": "image",
+        "key": "0f37df36-2b11-4eac-8c97-e8bfd4234c18/f3c92ed1-4564-487a-b9ff-be7877a36264/image",
+        "bytes": 479438,
+        "sha256": "b3cb3363e3e0dc9ea5a7e5970611784a95079eae055ce8f0be8e52a75c127120"
+      },
+      "previous_state": "CREATED",
+      "decision": "CREATED",
+      "policy_rule": "original_preserved",
+      "model_invocation": "disabled",
+      "result": "Original photograph preserved",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "380b9f11-88cc-4af7-92fd-2470772eee14",
+      "inspection_id": "0f37df36-2b11-4eac-8c97-e8bfd4234c18",
+      "timestamp": "2026-10-27T03:49:25.768173+00:00",
+      "tool": "define_positions",
+      "input_references": {
+        "reference": "0f37df36-2b11-4eac-8c97-e8bfd4234c18/9d5f3bf1-bc6d-4621-9f7c-94fd1cb31887/reference",
+        "image": "0f37df36-2b11-4eac-8c97-e8bfd4234c18/f3c92ed1-4564-487a-b9ff-be7877a36264/image"
+      },
+      "observed_features": {
+        "regions": [
+          {
+            "id": "P66601",
+            "box": [
+              0.37109375,
+              0.3680555932774205,
+              0.11328125,
+              0.24027783058838864
+            ]
+          }
+        ]
+      },
+      "previous_state": "CREATED",
+      "decision": "CREATED",
+      "policy_rule": "operator_annotations",
+      "model_invocation": "disabled",
+      "result": "Expected product positions saved",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "59409886-2946-4d05-8012-661694b44a17",
+      "inspection_id": "0f37df36-2b11-4eac-8c97-e8bfd4234c18",
+      "timestamp": "2026-10-27T03:49:26.206263+00:00",
+      "tool": "analyze_shelf",
+      "input_references": {
+        "reference": "0f37df36-2b11-4eac-8c97-e8bfd4234c18/9d5f3bf1-bc6d-4621-9f7c-94fd1cb31887/reference",
+        "image": "0f37df36-2b11-4eac-8c97-e8bfd4234c18/f3c92ed1-4564-487a-b9ff-be7877a36264/image"
+      },
+      "observed_features": {},
+      "previous_state": "CREATED",
+      "decision": "ANALYZING",
+      "policy_rule": "begin_analysis",
+      "model_invocation": "disabled",
+      "result": "Analysis started",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "ae7f51db-6e96-4b7c-be27-b6661a981d33",
+      "inspection_id": "0f37df36-2b11-4eac-8c97-e8bfd4234c18",
+      "timestamp": "2026-10-27T03:49:26.791213+00:00",
+      "tool": "assess_evidence_quality",
+      "input_references": {
+        "reference": "0f37df36-2b11-4eac-8c97-e8bfd4234c18/9d5f3bf1-bc6d-4621-9f7c-94fd1cb31887/reference",
+        "image": "0f37df36-2b11-4eac-8c97-e8bfd4234c18/f3c92ed1-4564-487a-b9ff-be7877a36264/image",
+        "overlay": "0f37df36-2b11-4eac-8c97-e8bfd4234c18/1e4cc0d8-6efe-4e83-a020-b72500d08758/overlay.png"
+      },
+      "observed_features": {
+        "thresholds": {
+          "min_sharpness": 45,
+          "min_matches": 18,
+          "min_inlier_ratio": 0.45,
+          "max_reprojection_px": 2.5,
+          "gap_score": 0.48,
+          "min_changed_fraction": 0.18
+        },
+        "algorithm": "reference-occupancy-1.0",
+        "opencv": "5.0.0",
+        "quality_ok": true,
+        "diagnostics": {
+          "sharpness": 3148.63,
+          "matches": 3379,
+          "inlier_ratio": 0.999,
+          "reprojection_error": 0.003
+        },
+        "candidates": [],
+        "regions": [
+          {
+            "id": "P66601",
+            "box": [
+              0.37109375,
+              0.3680555932774205,
+              0.11328125,
+              0.24027783058838864
+            ],
+            "score": 0.004,
+            "edge_ratio": 0.993,
+            "texture_ratio": 0.999,
+            "changed_fraction": 0,
+            "components": 0,
+            "gap": false,
+            "ambiguous": false
+          }
+        ],
+        "reason": "No significant occupancy loss detected.",
+        "duration_ms": 344.51
+      },
+      "previous_state": "ANALYZING",
+      "decision": "EVIDENCE_READY",
+      "policy_rule": "opencv_quality_gate",
+      "model_invocation": "disabled",
+      "result": "No significant occupancy loss detected.",
+      "runtime_ms": 344.51,
+      "error": null
+    }
+  ],
+  "task": null,
+  "verification": null,
+  "expires": 1795664959
+}

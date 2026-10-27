@@ -1,6 +1,6 @@
 # Demo script — under five minutes
 
-Before recording: run `scripts/start.ps1 -Cloud`, open http://127.0.0.1:8000, confirm AWS Lambda/OpenCV 5.0.0, and keep ARCHITECTURE.md and EVALUATION.md ready. Authenticate privately before screen-sharing. All demo photographs are synthetic.
+Before recording: run `scripts/start.ps1 -Cloud`, open http://127.0.0.1:8000/workspace/, confirm AWS Lambda/OpenCV 5.0.0, and keep ARCHITECTURE.md and EVALUATION.md ready. Authenticate privately before screen-sharing. All demo photographs are synthetic.
 
 **0:00–0:30 — User and scope.** “ShelfSignal is a visual inspection tool for a shift supervisor. It compares a shelf with a reference, asks for human review and checks a follow-up photograph. It does not identify SKUs or know store inventory. The manual-workflow premise is an assumption; we have not conducted user research.”
 

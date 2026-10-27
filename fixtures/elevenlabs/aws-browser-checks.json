@@ -1,0 +1,43 @@
+{
+  "synthetic": true,
+  "runtime": "AWS Lambda",
+  "passed": true,
+  "records": [
+    {
+      "name": "proposal",
+      "id": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb",
+      "state": "APPROVAL_REQUIRED"
+    },
+    {
+      "name": "unresolved",
+      "id": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb",
+      "state": "UNRESOLVED"
+    },
+    {
+      "name": "inconclusive",
+      "id": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb",
+      "state": "INCONCLUSIVE"
+    },
+    {
+      "name": "resolved",
+      "id": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb",
+      "state": "VERIFIED_VISUALLY"
+    },
+    {
+      "name": "persisted",
+      "id": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb",
+      "state": "VERIFIED_VISUALLY"
+    },
+    {
+      "name": "rescan",
+      "id": "aa919f1c-d169-470f-8279-b8a397d90702",
+      "state": "RESCAN_REQUIRED"
+    },
+    {
+      "name": "no-change",
+      "id": "0f37df36-2b11-4eac-8c97-e8bfd4234c18",
+      "state": "EVIDENCE_READY"
+    }
+  ],
+  "errors": []
+}

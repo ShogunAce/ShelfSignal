@@ -1,0 +1,22 @@
+[
+  {
+    "width": 390,
+    "gap": 14,
+    "overflow": false
+  },
+  {
+    "width": 1350,
+    "gap": 18,
+    "overflow": false
+  },
+  {
+    "width": 1920,
+    "gap": 18,
+    "overflow": false
+  },
+  {
+    "width": 2560,
+    "gap": 18,
+    "overflow": false
+  }
+]

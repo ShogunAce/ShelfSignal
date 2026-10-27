@@ -1,0 +1,1 @@
+export function SignalMark(){return <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M11 4H5a1 1 0 0 0-1 1v6m17-7h6a1 1 0 0 1 1 1v6M4 21v6a1 1 0 0 0 1 1h6m10 0h6a1 1 0 0 0 1-1v-6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"/><path d="M10 20v-8m6 10V10m6 10v-8" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"/></svg>}

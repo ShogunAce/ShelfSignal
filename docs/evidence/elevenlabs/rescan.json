@@ -1,0 +1,232 @@
+{
+  "id": "aa919f1c-d169-470f-8279-b8a397d90702",
+  "revision": 7,
+  "state": "RESCAN_REQUIRED",
+  "images": {
+    "reference": "aa919f1c-d169-470f-8279-b8a397d90702/f78c2d9e-bb77-4d4f-b864-7abcbfbb7bf2/reference",
+    "image": "aa919f1c-d169-470f-8279-b8a397d90702/91fed1c6-4a4d-4895-9c13-fe401d3a1a09/image",
+    "overlay": "aa919f1c-d169-470f-8279-b8a397d90702/591fef0c-861c-4159-84fd-7b7c7706ea05/overlay.png"
+  },
+  "image_history": [
+    {
+      "kind": "reference",
+      "key": "aa919f1c-d169-470f-8279-b8a397d90702/f78c2d9e-bb77-4d4f-b864-7abcbfbb7bf2/reference",
+      "bytes": 2095801,
+      "sha256": "614afa8f9606149beecb42c8b9d14f73da91b81ee578acc51a1a3fc99961b158"
+    },
+    {
+      "kind": "image",
+      "key": "aa919f1c-d169-470f-8279-b8a397d90702/91fed1c6-4a4d-4895-9c13-fe401d3a1a09/image",
+      "bytes": 129301,
+      "sha256": "181f48f1fc6df5e550b6941b6cea7f21038c50d75d1d04249f6466b60f6248a3"
+    }
+  ],
+  "regions": [
+    {
+      "id": "P58266",
+      "box": [
+        0.37109375,
+        0.3680555932774205,
+        0.11328125,
+        0.24027783058838864
+      ]
+    }
+  ],
+  "analysis": {
+    "thresholds": {
+      "min_sharpness": 45,
+      "min_matches": 18,
+      "min_inlier_ratio": 0.45,
+      "max_reprojection_px": 2.5,
+      "gap_score": 0.48,
+      "min_changed_fraction": 0.18
+    },
+    "algorithm": "reference-occupancy-1.0",
+    "opencv": "5.0.0",
+    "quality_ok": false,
+    "diagnostics": {
+      "sharpness": 2.64,
+      "matches": 0,
+      "inlier_ratio": 0,
+      "reprojection_error": null
+    },
+    "candidates": [],
+    "regions": [],
+    "reason": "Image is too blurred. Hold the camera steady and rescan.",
+    "duration_ms": 106.91
+  },
+  "candidates": [],
+  "events": [
+    {
+      "event_id": "4a2f9407-1769-4cd7-90e3-0e457f6c7285",
+      "inspection_id": "aa919f1c-d169-470f-8279-b8a397d90702",
+      "timestamp": "2026-10-27T03:49:06.292122+00:00",
+      "tool": "create_inspection",
+      "input_references": {},
+      "observed_features": {},
+      "previous_state": "CREATED",
+      "decision": "CREATED",
+      "policy_rule": "operator_started",
+      "model_invocation": "disabled",
+      "result": "Inspection created",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "0aba6b1b-54f4-463f-8403-744c5fc04ae0",
+      "inspection_id": "aa919f1c-d169-470f-8279-b8a397d90702",
+      "timestamp": "2026-10-27T03:49:09.384754+00:00",
+      "tool": "upload_reference",
+      "input_references": {
+        "reference": "aa919f1c-d169-470f-8279-b8a397d90702/f78c2d9e-bb77-4d4f-b864-7abcbfbb7bf2/reference"
+      },
+      "observed_features": {
+        "kind": "reference",
+        "key": "aa919f1c-d169-470f-8279-b8a397d90702/f78c2d9e-bb77-4d4f-b864-7abcbfbb7bf2/reference",
+        "bytes": 2095801,
+        "sha256": "614afa8f9606149beecb42c8b9d14f73da91b81ee578acc51a1a3fc99961b158"
+      },
+      "previous_state": "CREATED",
+      "decision": "CREATED",
+      "policy_rule": "original_preserved",
+      "model_invocation": "disabled",
+      "result": "Original photograph preserved",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "9ca660c4-01a6-4035-ad93-73add8afbdfe",
+      "inspection_id": "aa919f1c-d169-470f-8279-b8a397d90702",
+      "timestamp": "2026-10-27T03:49:11.282283+00:00",
+      "tool": "upload_image",
+      "input_references": {
+        "reference": "aa919f1c-d169-470f-8279-b8a397d90702/f78c2d9e-bb77-4d4f-b864-7abcbfbb7bf2/reference",
+        "image": "aa919f1c-d169-470f-8279-b8a397d90702/91fed1c6-4a4d-4895-9c13-fe401d3a1a09/image"
+      },
+      "observed_features": {
+        "kind": "image",
+        "key": "aa919f1c-d169-470f-8279-b8a397d90702/91fed1c6-4a4d-4895-9c13-fe401d3a1a09/image",
+        "bytes": 129301,
+        "sha256": "181f48f1fc6df5e550b6941b6cea7f21038c50d75d1d04249f6466b60f6248a3"
+      },
+      "previous_state": "CREATED",
+      "decision": "CREATED",
+      "policy_rule": "original_preserved",
+      "model_invocation": "disabled",
+      "result": "Original photograph preserved",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "0b07fd70-841e-4bca-8383-43c2bebd6211",
+      "inspection_id": "aa919f1c-d169-470f-8279-b8a397d90702",
+      "timestamp": "2026-10-27T03:49:17.447062+00:00",
+      "tool": "define_positions",
+      "input_references": {
+        "reference": "aa919f1c-d169-470f-8279-b8a397d90702/f78c2d9e-bb77-4d4f-b864-7abcbfbb7bf2/reference",
+        "image": "aa919f1c-d169-470f-8279-b8a397d90702/91fed1c6-4a4d-4895-9c13-fe401d3a1a09/image"
+      },
+      "observed_features": {
+        "regions": [
+          {
+            "id": "P58266",
+            "box": [
+              0.37109375,
+              0.3680555932774205,
+              0.11328125,
+              0.24027783058838864
+            ]
+          }
+        ]
+      },
+      "previous_state": "CREATED",
+      "decision": "CREATED",
+      "policy_rule": "operator_annotations",
+      "model_invocation": "disabled",
+      "result": "Expected product positions saved",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "684d8ab5-3564-402f-8398-0a9ea5addaf6",
+      "inspection_id": "aa919f1c-d169-470f-8279-b8a397d90702",
+      "timestamp": "2026-10-27T03:49:17.866926+00:00",
+      "tool": "analyze_shelf",
+      "input_references": {
+        "reference": "aa919f1c-d169-470f-8279-b8a397d90702/f78c2d9e-bb77-4d4f-b864-7abcbfbb7bf2/reference",
+        "image": "aa919f1c-d169-470f-8279-b8a397d90702/91fed1c6-4a4d-4895-9c13-fe401d3a1a09/image"
+      },
+      "observed_features": {},
+      "previous_state": "CREATED",
+      "decision": "ANALYZING",
+      "policy_rule": "begin_analysis",
+      "model_invocation": "disabled",
+      "result": "Analysis started",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "ea559f9c-df37-40fe-9f93-4fb57ae83112",
+      "inspection_id": "aa919f1c-d169-470f-8279-b8a397d90702",
+      "timestamp": "2026-10-27T03:49:18.183719+00:00",
+      "tool": "assess_evidence_quality",
+      "input_references": {
+        "reference": "aa919f1c-d169-470f-8279-b8a397d90702/f78c2d9e-bb77-4d4f-b864-7abcbfbb7bf2/reference",
+        "image": "aa919f1c-d169-470f-8279-b8a397d90702/91fed1c6-4a4d-4895-9c13-fe401d3a1a09/image",
+        "overlay": "aa919f1c-d169-470f-8279-b8a397d90702/591fef0c-861c-4159-84fd-7b7c7706ea05/overlay.png"
+      },
+      "observed_features": {
+        "thresholds": {
+          "min_sharpness": 45,
+          "min_matches": 18,
+          "min_inlier_ratio": 0.45,
+          "max_reprojection_px": 2.5,
+          "gap_score": 0.48,
+          "min_changed_fraction": 0.18
+        },
+        "algorithm": "reference-occupancy-1.0",
+        "opencv": "5.0.0",
+        "quality_ok": false,
+        "diagnostics": {
+          "sharpness": 2.64,
+          "matches": 0,
+          "inlier_ratio": 0,
+          "reprojection_error": null
+        },
+        "candidates": [],
+        "regions": [],
+        "reason": "Image is too blurred. Hold the camera steady and rescan.",
+        "duration_ms": 106.91
+      },
+      "previous_state": "ANALYZING",
+      "decision": "EVIDENCE_READY",
+      "policy_rule": "opencv_quality_gate",
+      "model_invocation": "disabled",
+      "result": "Image is too blurred. Hold the camera steady and rescan.",
+      "runtime_ms": 106.91,
+      "error": null
+    },
+    {
+      "event_id": "52ac60ff-1d80-48e8-84af-f6e3f4132604",
+      "inspection_id": "aa919f1c-d169-470f-8279-b8a397d90702",
+      "timestamp": "2026-10-27T03:49:18.218220+00:00",
+      "tool": "request_rescan",
+      "input_references": {
+        "reference": "aa919f1c-d169-470f-8279-b8a397d90702/f78c2d9e-bb77-4d4f-b864-7abcbfbb7bf2/reference",
+        "image": "aa919f1c-d169-470f-8279-b8a397d90702/91fed1c6-4a4d-4895-9c13-fe401d3a1a09/image",
+        "overlay": "aa919f1c-d169-470f-8279-b8a397d90702/591fef0c-861c-4159-84fd-7b7c7706ea05/overlay.png"
+      },
+      "observed_features": {},
+      "previous_state": "EVIDENCE_READY",
+      "decision": "RESCAN_REQUIRED",
+      "policy_rule": "unreliable_evidence",
+      "model_invocation": "disabled",
+      "result": "Image is too blurred. Hold the camera steady and rescan.",
+      "runtime_ms": 0,
+      "error": null
+    }
+  ],
+  "task": null,
+  "verification": null,
+  "expires": 1795664946
+}

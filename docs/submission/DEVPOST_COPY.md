@@ -1,4 +1,4 @@
-# ShelfSignal — Kenosis Interactive
+# ShelfSignal | Kenosis Interactive
 
 ## Inspiration
 
@@ -31,7 +31,7 @@ Maintaining a trustworthy workflow also required careful engineering. We fixed v
 ## Accomplishments that we're proud of
 
 - Executed the complete reference-to-inspection-to-approval-to-follow-up loop locally and on AWS using OpenCV 5.0.0.
-- Passed 19 backend tests both locally and in the Linux container, plus six local and six AWS browser workflows.
+- Passed 19 backend tests both locally and in the Linux container, plus 14 local and 14 AWS browser workflows.
 - Verified private image persistence, original-image hashes, stored execution traces, and rejection of unauthenticated access.
 - Measured 85.7% precision, 100% recall, and 90.9% expected-action agreement across 88 synthetic inspection cases. All 24 synthetic follow-up classifications were correct.
 - Included the eight false positives in our evaluation and documentation rather than presenting only successful examples.

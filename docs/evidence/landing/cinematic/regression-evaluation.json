@@ -1,0 +1,1608 @@
+{
+  "summary": {
+    "synthetic": true,
+    "sample_count": 88,
+    "seeds": 8,
+    "true_positives": 48,
+    "false_positives": 8,
+    "false_negatives": 0,
+    "precision": 0.8571428571428571,
+    "recall": 1.0,
+    "median_latency_ms": 82.35499999999999,
+    "p95_latency_ms": 116.6425,
+    "branch_accuracy": 0.9090909090909091,
+    "quality_accepted": 64,
+    "region_overlap_note": "Predictions classify operator-defined regions; IoU is 1 for matched position IDs by construction, not an independent localization metric.",
+    "limitations": "Synthetic fixtures do not establish real-store performance.",
+    "verification_samples": 24,
+    "verification_accuracy": 1.0,
+    "inconclusive_correct": 8,
+    "alignment_rejections": 8
+  },
+  "cases": [
+    {
+      "seed": 0,
+      "kind": "no_change",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 427.01,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4774.24,
+        "matches": 2463,
+        "inlier_ratio": 0.953,
+        "reprojection_error": 0.005
+      }
+    },
+    {
+      "seed": 0,
+      "kind": "single_gap",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 89.89,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4559.19,
+        "matches": 2415,
+        "inlier_ratio": 0.943,
+        "reprojection_error": 0.005
+      }
+    },
+    {
+      "seed": 0,
+      "kind": "multiple_gaps",
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 81.97,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4125.24,
+        "matches": 2246,
+        "inlier_ratio": 0.916,
+        "reprojection_error": 0.004
+      }
+    },
+    {
+      "seed": 0,
+      "kind": "refilled",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 82.33,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4774.24,
+        "matches": 2463,
+        "inlier_ratio": 0.953,
+        "reprojection_error": 0.005
+      }
+    },
+    {
+      "seed": 0,
+      "kind": "still_empty",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 97.35,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4559.19,
+        "matches": 2415,
+        "inlier_ratio": 0.943,
+        "reprojection_error": 0.005
+      }
+    },
+    {
+      "seed": 0,
+      "kind": "blur",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 18.01,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 2.21,
+        "matches": 0,
+        "inlier_ratio": 0.0,
+        "reprojection_error": null
+      }
+    },
+    {
+      "seed": 0,
+      "kind": "alignment_failure",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 70.81,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 49544.73,
+        "matches": 0,
+        "inlier_ratio": 0.0,
+        "reprojection_error": null
+      }
+    },
+    {
+      "seed": 0,
+      "kind": "occlusion",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 90.22,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 4455.73,
+        "matches": 2110,
+        "inlier_ratio": 0.937,
+        "reprojection_error": 0.006
+      }
+    },
+    {
+      "seed": 0,
+      "kind": "lighting",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 96.44,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 2543.35,
+        "matches": 2378,
+        "inlier_ratio": 0.934,
+        "reprojection_error": 0.007
+      }
+    },
+    {
+      "seed": 0,
+      "kind": "angle",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 128.73,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 2108.01,
+        "matches": 827,
+        "inlier_ratio": 0.674,
+        "reprojection_error": 0.841
+      }
+    },
+    {
+      "seed": 0,
+      "kind": "flat_occlusion",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": false,
+      "duration_ms": 117.01,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4569.87,
+        "matches": 2402,
+        "inlier_ratio": 0.946,
+        "reprojection_error": 0.005
+      }
+    },
+    {
+      "seed": 1,
+      "kind": "no_change",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 120.2,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4612.51,
+        "matches": 2485,
+        "inlier_ratio": 0.953,
+        "reprojection_error": 0.007
+      }
+    },
+    {
+      "seed": 1,
+      "kind": "single_gap",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 97.04,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4366.56,
+        "matches": 2426,
+        "inlier_ratio": 0.945,
+        "reprojection_error": 0.008
+      }
+    },
+    {
+      "seed": 1,
+      "kind": "multiple_gaps",
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 95.62,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 3928.21,
+        "matches": 2290,
+        "inlier_ratio": 0.914,
+        "reprojection_error": 0.007
+      }
+    },
+    {
+      "seed": 1,
+      "kind": "refilled",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 91.01,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4612.51,
+        "matches": 2485,
+        "inlier_ratio": 0.953,
+        "reprojection_error": 0.007
+      }
+    },
+    {
+      "seed": 1,
+      "kind": "still_empty",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 105.03,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4366.56,
+        "matches": 2426,
+        "inlier_ratio": 0.945,
+        "reprojection_error": 0.008
+      }
+    },
+    {
+      "seed": 1,
+      "kind": "blur",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 24.93,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 2.16,
+        "matches": 0,
+        "inlier_ratio": 0.0,
+        "reprojection_error": null
+      }
+    },
+    {
+      "seed": 1,
+      "kind": "alignment_failure",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 96.17,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 49392.55,
+        "matches": 0,
+        "inlier_ratio": 0.0,
+        "reprojection_error": null
+      }
+    },
+    {
+      "seed": 1,
+      "kind": "occlusion",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 115.96,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 4398.11,
+        "matches": 2148,
+        "inlier_ratio": 0.94,
+        "reprojection_error": 0.009
+      }
+    },
+    {
+      "seed": 1,
+      "kind": "lighting",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 87.23,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 2454.61,
+        "matches": 2348,
+        "inlier_ratio": 0.945,
+        "reprojection_error": 0.005
+      }
+    },
+    {
+      "seed": 1,
+      "kind": "angle",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 96.57,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 2004.32,
+        "matches": 864,
+        "inlier_ratio": 0.693,
+        "reprojection_error": 0.839
+      }
+    },
+    {
+      "seed": 1,
+      "kind": "flat_occlusion",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": false,
+      "duration_ms": 96.6,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4376.44,
+        "matches": 2422,
+        "inlier_ratio": 0.945,
+        "reprojection_error": 0.008
+      }
+    },
+    {
+      "seed": 2,
+      "kind": "no_change",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 115.78,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4722.03,
+        "matches": 2521,
+        "inlier_ratio": 0.948,
+        "reprojection_error": 0.003
+      }
+    },
+    {
+      "seed": 2,
+      "kind": "single_gap",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 100.95,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4482.55,
+        "matches": 2461,
+        "inlier_ratio": 0.938,
+        "reprojection_error": 0.003
+      }
+    },
+    {
+      "seed": 2,
+      "kind": "multiple_gaps",
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 109.94,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4053.72,
+        "matches": 2279,
+        "inlier_ratio": 0.908,
+        "reprojection_error": 0.003
+      }
+    },
+    {
+      "seed": 2,
+      "kind": "refilled",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 100.66,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4722.03,
+        "matches": 2521,
+        "inlier_ratio": 0.948,
+        "reprojection_error": 0.003
+      }
+    },
+    {
+      "seed": 2,
+      "kind": "still_empty",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 117.62,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4482.55,
+        "matches": 2461,
+        "inlier_ratio": 0.938,
+        "reprojection_error": 0.003
+      }
+    },
+    {
+      "seed": 2,
+      "kind": "blur",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 18.73,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 2.2,
+        "matches": 0,
+        "inlier_ratio": 0.0,
+        "reprojection_error": null
+      }
+    },
+    {
+      "seed": 2,
+      "kind": "alignment_failure",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 75.12,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 49525.06,
+        "matches": 0,
+        "inlier_ratio": 0.0,
+        "reprojection_error": null
+      }
+    },
+    {
+      "seed": 2,
+      "kind": "occlusion",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 92.32,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 4526.37,
+        "matches": 2185,
+        "inlier_ratio": 0.935,
+        "reprojection_error": 0.005
+      }
+    },
+    {
+      "seed": 2,
+      "kind": "lighting",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 107.54,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 2518.29,
+        "matches": 2372,
+        "inlier_ratio": 0.945,
+        "reprojection_error": 0.007
+      }
+    },
+    {
+      "seed": 2,
+      "kind": "angle",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 93.42,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 2049.99,
+        "matches": 925,
+        "inlier_ratio": 0.706,
+        "reprojection_error": 0.867
+      }
+    },
+    {
+      "seed": 2,
+      "kind": "flat_occlusion",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": false,
+      "duration_ms": 99.5,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4492.68,
+        "matches": 2462,
+        "inlier_ratio": 0.939,
+        "reprojection_error": 0.004
+      }
+    },
+    {
+      "seed": 3,
+      "kind": "no_change",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 91.77,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4663.12,
+        "matches": 2472,
+        "inlier_ratio": 0.941,
+        "reprojection_error": 0.004
+      }
+    },
+    {
+      "seed": 3,
+      "kind": "single_gap",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 97.95,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4403.26,
+        "matches": 2410,
+        "inlier_ratio": 0.93,
+        "reprojection_error": 0.004
+      }
+    },
+    {
+      "seed": 3,
+      "kind": "multiple_gaps",
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 89.34,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4002.49,
+        "matches": 2275,
+        "inlier_ratio": 0.906,
+        "reprojection_error": 0.003
+      }
+    },
+    {
+      "seed": 3,
+      "kind": "refilled",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 92.33,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4663.12,
+        "matches": 2472,
+        "inlier_ratio": 0.941,
+        "reprojection_error": 0.004
+      }
+    },
+    {
+      "seed": 3,
+      "kind": "still_empty",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 105.97,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4403.26,
+        "matches": 2410,
+        "inlier_ratio": 0.93,
+        "reprojection_error": 0.004
+      }
+    },
+    {
+      "seed": 3,
+      "kind": "blur",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 18.82,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 2.14,
+        "matches": 0,
+        "inlier_ratio": 0.0,
+        "reprojection_error": null
+      }
+    },
+    {
+      "seed": 3,
+      "kind": "alignment_failure",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 66.77,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 49456.77,
+        "matches": 0,
+        "inlier_ratio": 0.0,
+        "reprojection_error": null
+      }
+    },
+    {
+      "seed": 3,
+      "kind": "occlusion",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 103.6,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 4419.1,
+        "matches": 2118,
+        "inlier_ratio": 0.927,
+        "reprojection_error": 0.005
+      }
+    },
+    {
+      "seed": 3,
+      "kind": "lighting",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 92.59,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 2487.08,
+        "matches": 2354,
+        "inlier_ratio": 0.942,
+        "reprojection_error": 0.005
+      }
+    },
+    {
+      "seed": 3,
+      "kind": "angle",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 99.54,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 2034.55,
+        "matches": 955,
+        "inlier_ratio": 0.699,
+        "reprojection_error": 0.888
+      }
+    },
+    {
+      "seed": 3,
+      "kind": "flat_occlusion",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": false,
+      "duration_ms": 96.03,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4414.31,
+        "matches": 2407,
+        "inlier_ratio": 0.932,
+        "reprojection_error": 0.004
+      }
+    },
+    {
+      "seed": 4,
+      "kind": "no_change",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 86.03,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4718.93,
+        "matches": 2481,
+        "inlier_ratio": 0.947,
+        "reprojection_error": 0.007
+      }
+    },
+    {
+      "seed": 4,
+      "kind": "single_gap",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 82.84,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4473.53,
+        "matches": 2435,
+        "inlier_ratio": 0.936,
+        "reprojection_error": 0.007
+      }
+    },
+    {
+      "seed": 4,
+      "kind": "multiple_gaps",
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 87.89,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 3981.76,
+        "matches": 2220,
+        "inlier_ratio": 0.895,
+        "reprojection_error": 0.008
+      }
+    },
+    {
+      "seed": 4,
+      "kind": "refilled",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 85.07,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4718.93,
+        "matches": 2481,
+        "inlier_ratio": 0.947,
+        "reprojection_error": 0.007
+      }
+    },
+    {
+      "seed": 4,
+      "kind": "still_empty",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 82.02,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4473.53,
+        "matches": 2435,
+        "inlier_ratio": 0.936,
+        "reprojection_error": 0.007
+      }
+    },
+    {
+      "seed": 4,
+      "kind": "blur",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 16.98,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 2.18,
+        "matches": 0,
+        "inlier_ratio": 0.0,
+        "reprojection_error": null
+      }
+    },
+    {
+      "seed": 4,
+      "kind": "alignment_failure",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 66.93,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 49469.26,
+        "matches": 1,
+        "inlier_ratio": 0.0,
+        "reprojection_error": null
+      }
+    },
+    {
+      "seed": 4,
+      "kind": "occlusion",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 84.34,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 4498.21,
+        "matches": 2095,
+        "inlier_ratio": 0.935,
+        "reprojection_error": 0.009
+      }
+    },
+    {
+      "seed": 4,
+      "kind": "lighting",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 84.17,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 2514.48,
+        "matches": 2370,
+        "inlier_ratio": 0.949,
+        "reprojection_error": 0.006
+      }
+    },
+    {
+      "seed": 4,
+      "kind": "angle",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 76.57,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 2054.15,
+        "matches": 868,
+        "inlier_ratio": 0.69,
+        "reprojection_error": 0.812
+      }
+    },
+    {
+      "seed": 4,
+      "kind": "flat_occlusion",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": false,
+      "duration_ms": 76.88,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4484.33,
+        "matches": 2430,
+        "inlier_ratio": 0.938,
+        "reprojection_error": 0.006
+      }
+    },
+    {
+      "seed": 5,
+      "kind": "no_change",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 78.95,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4862.35,
+        "matches": 2438,
+        "inlier_ratio": 0.941,
+        "reprojection_error": 0.007
+      }
+    },
+    {
+      "seed": 5,
+      "kind": "single_gap",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 77.57,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4647.09,
+        "matches": 2402,
+        "inlier_ratio": 0.935,
+        "reprojection_error": 0.007
+      }
+    },
+    {
+      "seed": 5,
+      "kind": "multiple_gaps",
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 78.28,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4180.8,
+        "matches": 2253,
+        "inlier_ratio": 0.907,
+        "reprojection_error": 0.008
+      }
+    },
+    {
+      "seed": 5,
+      "kind": "refilled",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 76.5,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4862.35,
+        "matches": 2438,
+        "inlier_ratio": 0.941,
+        "reprojection_error": 0.007
+      }
+    },
+    {
+      "seed": 5,
+      "kind": "still_empty",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 80.05,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4647.09,
+        "matches": 2402,
+        "inlier_ratio": 0.935,
+        "reprojection_error": 0.007
+      }
+    },
+    {
+      "seed": 5,
+      "kind": "blur",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 17.66,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 2.24,
+        "matches": 0,
+        "inlier_ratio": 0.0,
+        "reprojection_error": null
+      }
+    },
+    {
+      "seed": 5,
+      "kind": "alignment_failure",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 67.48,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 49348.59,
+        "matches": 0,
+        "inlier_ratio": 0.0,
+        "reprojection_error": null
+      }
+    },
+    {
+      "seed": 5,
+      "kind": "occlusion",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 81.91,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 4523.74,
+        "matches": 2139,
+        "inlier_ratio": 0.916,
+        "reprojection_error": 0.009
+      }
+    },
+    {
+      "seed": 5,
+      "kind": "lighting",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 76.05,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 2597.42,
+        "matches": 2321,
+        "inlier_ratio": 0.931,
+        "reprojection_error": 0.004
+      }
+    },
+    {
+      "seed": 5,
+      "kind": "angle",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 76.33,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 2146.38,
+        "matches": 866,
+        "inlier_ratio": 0.647,
+        "reprojection_error": 0.817
+      }
+    },
+    {
+      "seed": 5,
+      "kind": "flat_occlusion",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": false,
+      "duration_ms": 77.9,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4657.23,
+        "matches": 2394,
+        "inlier_ratio": 0.934,
+        "reprojection_error": 0.007
+      }
+    },
+    {
+      "seed": 6,
+      "kind": "no_change",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 77.53,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4705.86,
+        "matches": 2542,
+        "inlier_ratio": 0.945,
+        "reprojection_error": 0.002
+      }
+    },
+    {
+      "seed": 6,
+      "kind": "single_gap",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 80.76,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4500.73,
+        "matches": 2519,
+        "inlier_ratio": 0.941,
+        "reprojection_error": 0.003
+      }
+    },
+    {
+      "seed": 6,
+      "kind": "multiple_gaps",
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 77.18,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4037.08,
+        "matches": 2354,
+        "inlier_ratio": 0.904,
+        "reprojection_error": 0.005
+      }
+    },
+    {
+      "seed": 6,
+      "kind": "refilled",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 79.06,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4705.86,
+        "matches": 2542,
+        "inlier_ratio": 0.945,
+        "reprojection_error": 0.002
+      }
+    },
+    {
+      "seed": 6,
+      "kind": "still_empty",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 78.86,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4500.73,
+        "matches": 2519,
+        "inlier_ratio": 0.941,
+        "reprojection_error": 0.003
+      }
+    },
+    {
+      "seed": 6,
+      "kind": "blur",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 17.3,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 2.2,
+        "matches": 0,
+        "inlier_ratio": 0.0,
+        "reprojection_error": null
+      }
+    },
+    {
+      "seed": 6,
+      "kind": "alignment_failure",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 66.59,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 49500.08,
+        "matches": 1,
+        "inlier_ratio": 0.0,
+        "reprojection_error": null
+      }
+    },
+    {
+      "seed": 6,
+      "kind": "occlusion",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 77.76,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 4432.93,
+        "matches": 2193,
+        "inlier_ratio": 0.927,
+        "reprojection_error": 0.004
+      }
+    },
+    {
+      "seed": 6,
+      "kind": "lighting",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 76.13,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 2505.89,
+        "matches": 2418,
+        "inlier_ratio": 0.944,
+        "reprojection_error": 0.004
+      }
+    },
+    {
+      "seed": 6,
+      "kind": "angle",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 77.34,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 2066.33,
+        "matches": 914,
+        "inlier_ratio": 0.701,
+        "reprojection_error": 0.799
+      }
+    },
+    {
+      "seed": 6,
+      "kind": "flat_occlusion",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": false,
+      "duration_ms": 80.57,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4511.63,
+        "matches": 2504,
+        "inlier_ratio": 0.941,
+        "reprojection_error": 0.003
+      }
+    },
+    {
+      "seed": 7,
+      "kind": "no_change",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 82.47,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4765.91,
+        "matches": 2474,
+        "inlier_ratio": 0.951,
+        "reprojection_error": 0.006
+      }
+    },
+    {
+      "seed": 7,
+      "kind": "single_gap",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 77.53,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4514.56,
+        "matches": 2401,
+        "inlier_ratio": 0.94,
+        "reprojection_error": 0.006
+      }
+    },
+    {
+      "seed": 7,
+      "kind": "multiple_gaps",
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 76.88,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4064.53,
+        "matches": 2187,
+        "inlier_ratio": 0.909,
+        "reprojection_error": 0.007
+      }
+    },
+    {
+      "seed": 7,
+      "kind": "refilled",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 81.66,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4765.91,
+        "matches": 2474,
+        "inlier_ratio": 0.951,
+        "reprojection_error": 0.006
+      }
+    },
+    {
+      "seed": 7,
+      "kind": "still_empty",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 83.98,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4514.56,
+        "matches": 2401,
+        "inlier_ratio": 0.94,
+        "reprojection_error": 0.006
+      }
+    },
+    {
+      "seed": 7,
+      "kind": "blur",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 17.55,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 2.22,
+        "matches": 0,
+        "inlier_ratio": 0.0,
+        "reprojection_error": null
+      }
+    },
+    {
+      "seed": 7,
+      "kind": "alignment_failure",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 67.76,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 49670.65,
+        "matches": 0,
+        "inlier_ratio": 0.0,
+        "reprojection_error": null
+      }
+    },
+    {
+      "seed": 7,
+      "kind": "occlusion",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "RESCAN_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 78.66,
+      "quality_ok": false,
+      "diagnostics": {
+        "sharpness": 4559.88,
+        "matches": 2095,
+        "inlier_ratio": 0.941,
+        "reprojection_error": 0.007
+      }
+    },
+    {
+      "seed": 7,
+      "kind": "lighting",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "decision": "EVIDENCE_READY",
+      "expected_decision": "EVIDENCE_READY",
+      "branch_correct": true,
+      "duration_ms": 78.48,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 2542.43,
+        "matches": 2365,
+        "inlier_ratio": 0.95,
+        "reprojection_error": 0.006
+      }
+    },
+    {
+      "seed": 7,
+      "kind": "angle",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "APPROVAL_REQUIRED",
+      "branch_correct": true,
+      "duration_ms": 76.17,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 2086.03,
+        "matches": 869,
+        "inlier_ratio": 0.682,
+        "reprojection_error": 0.796
+      }
+    },
+    {
+      "seed": 7,
+      "kind": "flat_occlusion",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "decision": "APPROVAL_REQUIRED",
+      "expected_decision": "RESCAN_REQUIRED",
+      "branch_correct": false,
+      "duration_ms": 82.38,
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 4524.72,
+        "matches": 2402,
+        "inlier_ratio": 0.942,
+        "reprojection_error": 0.007
+      }
+    }
+  ]
+}

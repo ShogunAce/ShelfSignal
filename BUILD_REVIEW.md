@@ -26,7 +26,7 @@ The initial files already contained the OpenCV engine, synthetic generator, Fast
 | A: workstation and identity | Python 3.12 environment, OpenCV 5.0.0, Node/npm and authenticated AWS identity inspected; no local Docker or SAM CLI |
 | B: vision | 88 measured synthetic cases; source/overlay examples and explicit failure cases |
 | C: policy loop | 19 backend tests and persisted local closed-loop trace |
-| D: UI | Passed: production build, six local browser workflows and six real AWS browser workflows |
+| D: UI | Passed: production build, 14 local browser workflows and 14 real AWS browser workflows |
 | E: local QA | pytest XML, evaluation JSON/CSV, frontend build output and browser screenshots |
 | F: AWS | Passed: actual OpenCV 5.0.0 x86_64 execution, seven decision outcomes, private original hashes, DynamoDB/S3 traces and unsigned HTTP 403 recorded in aws-smoke.json |
 | G: submission materials | Required Markdown sources, demo script and real narrated video present; judge arrangement and portal submission remain pending |

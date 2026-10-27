@@ -1,0 +1,1619 @@
+{
+  "reference.png": {
+    "thresholds": {
+      "min_sharpness": 45,
+      "min_matches": 18,
+      "min_inlier_ratio": 0.45,
+      "max_reprojection_px": 2.5,
+      "gap_score": 0.48,
+      "min_changed_fraction": 0.18
+    },
+    "algorithm": "reference-occupancy-1.0",
+    "opencv": "5.0.0",
+    "quality_ok": true,
+    "diagnostics": {
+      "sharpness": 3202.66,
+      "matches": 3500,
+      "inlier_ratio": 1.0,
+      "reprojection_error": 0.0
+    },
+    "candidates": [],
+    "regions": [
+      {
+        "id": "R1-1",
+        "box": [
+          0.0546875,
+          0.030555555555555555,
+          0.12109375,
+          0.25
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-2",
+        "box": [
+          0.21875,
+          0.030555555555555555,
+          0.1171875,
+          0.25
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-3",
+        "box": [
+          0.37109375,
+          0.030555555555555555,
+          0.11328125,
+          0.25
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-4",
+        "box": [
+          0.51953125,
+          0.030555555555555555,
+          0.1171875,
+          0.25
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-5",
+        "box": [
+          0.671875,
+          0.030555555555555555,
+          0.1171875,
+          0.25
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-6",
+        "box": [
+          0.8203125,
+          0.030555555555555555,
+          0.12109375,
+          0.25
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-1",
+        "box": [
+          0.0546875,
+          0.3680555555555556,
+          0.12109375,
+          0.24027777777777778
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-2",
+        "box": [
+          0.21875,
+          0.3680555555555556,
+          0.1171875,
+          0.24027777777777778
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-3",
+        "box": [
+          0.37109375,
+          0.3680555555555556,
+          0.11328125,
+          0.24027777777777778
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-4",
+        "box": [
+          0.51953125,
+          0.3680555555555556,
+          0.1171875,
+          0.24027777777777778
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-5",
+        "box": [
+          0.671875,
+          0.3680555555555556,
+          0.1171875,
+          0.24027777777777778
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-6",
+        "box": [
+          0.8203125,
+          0.3680555555555556,
+          0.12109375,
+          0.24027777777777778
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-1",
+        "box": [
+          0.0546875,
+          0.6916666666666667,
+          0.12109375,
+          0.2388888888888889
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-2",
+        "box": [
+          0.21875,
+          0.6916666666666667,
+          0.1171875,
+          0.2388888888888889
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-3",
+        "box": [
+          0.37109375,
+          0.6916666666666667,
+          0.11328125,
+          0.2388888888888889
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-4",
+        "box": [
+          0.51953125,
+          0.6916666666666667,
+          0.1171875,
+          0.2388888888888889
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-5",
+        "box": [
+          0.671875,
+          0.6916666666666667,
+          0.1171875,
+          0.2388888888888889
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-6",
+        "box": [
+          0.8203125,
+          0.6916666666666667,
+          0.12109375,
+          0.2388888888888889
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      }
+    ],
+    "reason": "No significant occupancy loss detected.",
+    "duration_ms": 943.07
+  },
+  "missing-item.png": {
+    "thresholds": {
+      "min_sharpness": 45,
+      "min_matches": 18,
+      "min_inlier_ratio": 0.45,
+      "max_reprojection_px": 2.5,
+      "gap_score": 0.48,
+      "min_changed_fraction": 0.18
+    },
+    "algorithm": "reference-occupancy-1.0",
+    "opencv": "5.0.0",
+    "quality_ok": true,
+    "diagnostics": {
+      "sharpness": 1964.33,
+      "matches": 2187,
+      "inlier_ratio": 0.979,
+      "reprojection_error": 0.039
+    },
+    "candidates": [
+      {
+        "id": "R2-3",
+        "box": [
+          0.37109375,
+          0.3680555555555556,
+          0.11328125,
+          0.24027777777777778
+        ],
+        "score": 0.881,
+        "edge_ratio": 0.011,
+        "texture_ratio": 0.281,
+        "changed_fraction": 0.504,
+        "components": 35,
+        "gap": true,
+        "ambiguous": false
+      }
+    ],
+    "regions": [
+      {
+        "id": "R1-1",
+        "box": [
+          0.0546875,
+          0.030555555555555555,
+          0.12109375,
+          0.25
+        ],
+        "score": 0.021,
+        "edge_ratio": 0.979,
+        "texture_ratio": 0.981,
+        "changed_fraction": 0.001,
+        "components": 2,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-2",
+        "box": [
+          0.21875,
+          0.030555555555555555,
+          0.1171875,
+          0.25
+        ],
+        "score": 0.033,
+        "edge_ratio": 0.959,
+        "texture_ratio": 0.98,
+        "changed_fraction": 0.0,
+        "components": 1,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-3",
+        "box": [
+          0.37109375,
+          0.030555555555555555,
+          0.11328125,
+          0.25
+        ],
+        "score": 0.04,
+        "edge_ratio": 0.941,
+        "texture_ratio": 0.989,
+        "changed_fraction": 0.002,
+        "components": 4,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-4",
+        "box": [
+          0.51953125,
+          0.030555555555555555,
+          0.1171875,
+          0.25
+        ],
+        "score": 0.016,
+        "edge_ratio": 0.98,
+        "texture_ratio": 0.99,
+        "changed_fraction": 0.0,
+        "components": 1,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-5",
+        "box": [
+          0.671875,
+          0.030555555555555555,
+          0.1171875,
+          0.25
+        ],
+        "score": 0.012,
+        "edge_ratio": 0.979,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.001,
+        "components": 2,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-6",
+        "box": [
+          0.8203125,
+          0.030555555555555555,
+          0.12109375,
+          0.25
+        ],
+        "score": 0.038,
+        "edge_ratio": 0.948,
+        "texture_ratio": 0.982,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-1",
+        "box": [
+          0.0546875,
+          0.3680555555555556,
+          0.12109375,
+          0.24027777777777778
+        ],
+        "score": 0.028,
+        "edge_ratio": 0.975,
+        "texture_ratio": 0.967,
+        "changed_fraction": 0.001,
+        "components": 3,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-2",
+        "box": [
+          0.21875,
+          0.3680555555555556,
+          0.1171875,
+          0.24027777777777778
+        ],
+        "score": 0.012,
+        "edge_ratio": 0.98,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.002,
+        "components": 3,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-3",
+        "box": [
+          0.37109375,
+          0.3680555555555556,
+          0.11328125,
+          0.24027777777777778
+        ],
+        "score": 0.881,
+        "edge_ratio": 0.011,
+        "texture_ratio": 0.281,
+        "changed_fraction": 0.504,
+        "components": 35,
+        "gap": true,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-4",
+        "box": [
+          0.51953125,
+          0.3680555555555556,
+          0.1171875,
+          0.24027777777777778
+        ],
+        "score": 0.014,
+        "edge_ratio": 0.991,
+        "texture_ratio": 0.979,
+        "changed_fraction": 0.001,
+        "components": 1,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-5",
+        "box": [
+          0.671875,
+          0.3680555555555556,
+          0.1171875,
+          0.24027777777777778
+        ],
+        "score": 0.021,
+        "edge_ratio": 0.967,
+        "texture_ratio": 0.997,
+        "changed_fraction": 0.001,
+        "components": 1,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-6",
+        "box": [
+          0.8203125,
+          0.3680555555555556,
+          0.12109375,
+          0.24027777777777778
+        ],
+        "score": 0.041,
+        "edge_ratio": 0.953,
+        "texture_ratio": 0.969,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-1",
+        "box": [
+          0.0546875,
+          0.6916666666666667,
+          0.12109375,
+          0.2388888888888889
+        ],
+        "score": 0.022,
+        "edge_ratio": 0.979,
+        "texture_ratio": 0.975,
+        "changed_fraction": 0.001,
+        "components": 1,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-2",
+        "box": [
+          0.21875,
+          0.6916666666666667,
+          0.1171875,
+          0.2388888888888889
+        ],
+        "score": 0.027,
+        "edge_ratio": 0.969,
+        "texture_ratio": 0.979,
+        "changed_fraction": 0.001,
+        "components": 3,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-3",
+        "box": [
+          0.37109375,
+          0.6916666666666667,
+          0.11328125,
+          0.2388888888888889
+        ],
+        "score": 0.03,
+        "edge_ratio": 0.957,
+        "texture_ratio": 0.988,
+        "changed_fraction": 0.0,
+        "components": 1,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-4",
+        "box": [
+          0.51953125,
+          0.6916666666666667,
+          0.1171875,
+          0.2388888888888889
+        ],
+        "score": 0.039,
+        "edge_ratio": 0.959,
+        "texture_ratio": 0.964,
+        "changed_fraction": 0.003,
+        "components": 5,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-5",
+        "box": [
+          0.671875,
+          0.6916666666666667,
+          0.1171875,
+          0.2388888888888889
+        ],
+        "score": 0.038,
+        "edge_ratio": 0.955,
+        "texture_ratio": 0.972,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-6",
+        "box": [
+          0.8203125,
+          0.6916666666666667,
+          0.12109375,
+          0.2388888888888889
+        ],
+        "score": 0.027,
+        "edge_ratio": 0.968,
+        "texture_ratio": 0.981,
+        "changed_fraction": 0.001,
+        "components": 3,
+        "gap": false,
+        "ambiguous": false
+      }
+    ],
+    "reason": "Possible gaps found; human review required.",
+    "duration_ms": 261.06
+  },
+  "refilled.jpg": {
+    "thresholds": {
+      "min_sharpness": 45,
+      "min_matches": 18,
+      "min_inlier_ratio": 0.45,
+      "max_reprojection_px": 2.5,
+      "gap_score": 0.48,
+      "min_changed_fraction": 0.18
+    },
+    "algorithm": "reference-occupancy-1.0",
+    "opencv": "5.0.0",
+    "quality_ok": true,
+    "diagnostics": {
+      "sharpness": 3324.21,
+      "matches": 3356,
+      "inlier_ratio": 0.999,
+      "reprojection_error": 0.003
+    },
+    "candidates": [],
+    "regions": [
+      {
+        "id": "R1-1",
+        "box": [
+          0.0546875,
+          0.030555555555555555,
+          0.12109375,
+          0.25
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.01,
+        "texture_ratio": 1.005,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-2",
+        "box": [
+          0.21875,
+          0.030555555555555555,
+          0.1171875,
+          0.25
+        ],
+        "score": 0.0,
+        "edge_ratio": 0.999,
+        "texture_ratio": 1.002,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-3",
+        "box": [
+          0.37109375,
+          0.030555555555555555,
+          0.11328125,
+          0.25
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.003,
+        "texture_ratio": 1.004,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-4",
+        "box": [
+          0.51953125,
+          0.030555555555555555,
+          0.1171875,
+          0.25
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.004,
+        "texture_ratio": 1.002,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-5",
+        "box": [
+          0.671875,
+          0.030555555555555555,
+          0.1171875,
+          0.25
+        ],
+        "score": 0.001,
+        "edge_ratio": 1.0,
+        "texture_ratio": 0.999,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-6",
+        "box": [
+          0.8203125,
+          0.030555555555555555,
+          0.12109375,
+          0.25
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.005,
+        "texture_ratio": 1.001,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-1",
+        "box": [
+          0.0546875,
+          0.3680555555555556,
+          0.12109375,
+          0.24027777777777778
+        ],
+        "score": 0.0,
+        "edge_ratio": 0.999,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-2",
+        "box": [
+          0.21875,
+          0.3680555555555556,
+          0.1171875,
+          0.24027777777777778
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.001,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-3",
+        "box": [
+          0.37109375,
+          0.3680555555555556,
+          0.11328125,
+          0.24027777777777778
+        ],
+        "score": 0.002,
+        "edge_ratio": 0.997,
+        "texture_ratio": 0.999,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-4",
+        "box": [
+          0.51953125,
+          0.3680555555555556,
+          0.1171875,
+          0.24027777777777778
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.003,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-5",
+        "box": [
+          0.671875,
+          0.3680555555555556,
+          0.1171875,
+          0.24027777777777778
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.005,
+        "texture_ratio": 0.998,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-6",
+        "box": [
+          0.8203125,
+          0.3680555555555556,
+          0.12109375,
+          0.24027777777777778
+        ],
+        "score": 0.009,
+        "edge_ratio": 0.986,
+        "texture_ratio": 0.998,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-1",
+        "box": [
+          0.0546875,
+          0.6916666666666667,
+          0.12109375,
+          0.2388888888888889
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.0,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-2",
+        "box": [
+          0.21875,
+          0.6916666666666667,
+          0.1171875,
+          0.2388888888888889
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.005,
+        "texture_ratio": 1.002,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-3",
+        "box": [
+          0.37109375,
+          0.6916666666666667,
+          0.11328125,
+          0.2388888888888889
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.004,
+        "texture_ratio": 0.998,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-4",
+        "box": [
+          0.51953125,
+          0.6916666666666667,
+          0.1171875,
+          0.2388888888888889
+        ],
+        "score": 0.003,
+        "edge_ratio": 0.995,
+        "texture_ratio": 0.999,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-5",
+        "box": [
+          0.671875,
+          0.6916666666666667,
+          0.1171875,
+          0.2388888888888889
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.013,
+        "texture_ratio": 0.997,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-6",
+        "box": [
+          0.8203125,
+          0.6916666666666667,
+          0.12109375,
+          0.2388888888888889
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.002,
+        "texture_ratio": 1.002,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      }
+    ],
+    "reason": "No significant occupancy loss detected.",
+    "duration_ms": 231.68
+  },
+  "still-empty.jpg": {
+    "thresholds": {
+      "min_sharpness": 45,
+      "min_matches": 18,
+      "min_inlier_ratio": 0.45,
+      "max_reprojection_px": 2.5,
+      "gap_score": 0.48,
+      "min_changed_fraction": 0.18
+    },
+    "algorithm": "reference-occupancy-1.0",
+    "opencv": "5.0.0",
+    "quality_ok": true,
+    "diagnostics": {
+      "sharpness": 1902.51,
+      "matches": 2179,
+      "inlier_ratio": 0.977,
+      "reprojection_error": 0.047
+    },
+    "candidates": [
+      {
+        "id": "R2-3",
+        "box": [
+          0.37109375,
+          0.3680555555555556,
+          0.11328125,
+          0.24027777777777778
+        ],
+        "score": 0.882,
+        "edge_ratio": 0.009,
+        "texture_ratio": 0.282,
+        "changed_fraction": 0.502,
+        "components": 37,
+        "gap": true,
+        "ambiguous": false
+      }
+    ],
+    "regions": [
+      {
+        "id": "R1-1",
+        "box": [
+          0.0546875,
+          0.030555555555555555,
+          0.12109375,
+          0.25
+        ],
+        "score": 0.015,
+        "edge_ratio": 0.981,
+        "texture_ratio": 0.991,
+        "changed_fraction": 0.001,
+        "components": 2,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-2",
+        "box": [
+          0.21875,
+          0.030555555555555555,
+          0.1171875,
+          0.25
+        ],
+        "score": 0.026,
+        "edge_ratio": 0.963,
+        "texture_ratio": 0.989,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-3",
+        "box": [
+          0.37109375,
+          0.030555555555555555,
+          0.11328125,
+          0.25
+        ],
+        "score": 0.037,
+        "edge_ratio": 0.939,
+        "texture_ratio": 0.999,
+        "changed_fraction": 0.002,
+        "components": 3,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-4",
+        "box": [
+          0.51953125,
+          0.030555555555555555,
+          0.1171875,
+          0.25
+        ],
+        "score": 0.01,
+        "edge_ratio": 0.984,
+        "texture_ratio": 0.997,
+        "changed_fraction": 0.0,
+        "components": 1,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-5",
+        "box": [
+          0.671875,
+          0.030555555555555555,
+          0.1171875,
+          0.25
+        ],
+        "score": 0.007,
+        "edge_ratio": 0.982,
+        "texture_ratio": 1.008,
+        "changed_fraction": 0.001,
+        "components": 2,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-6",
+        "box": [
+          0.8203125,
+          0.030555555555555555,
+          0.12109375,
+          0.25
+        ],
+        "score": 0.027,
+        "edge_ratio": 0.961,
+        "texture_ratio": 0.992,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-1",
+        "box": [
+          0.0546875,
+          0.3680555555555556,
+          0.12109375,
+          0.24027777777777778
+        ],
+        "score": 0.026,
+        "edge_ratio": 0.976,
+        "texture_ratio": 0.972,
+        "changed_fraction": 0.001,
+        "components": 3,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-2",
+        "box": [
+          0.21875,
+          0.3680555555555556,
+          0.1171875,
+          0.24027777777777778
+        ],
+        "score": 0.009,
+        "edge_ratio": 0.981,
+        "texture_ratio": 1.007,
+        "changed_fraction": 0.002,
+        "components": 3,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-3",
+        "box": [
+          0.37109375,
+          0.3680555555555556,
+          0.11328125,
+          0.24027777777777778
+        ],
+        "score": 0.882,
+        "edge_ratio": 0.009,
+        "texture_ratio": 0.282,
+        "changed_fraction": 0.502,
+        "components": 37,
+        "gap": true,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-4",
+        "box": [
+          0.51953125,
+          0.3680555555555556,
+          0.1171875,
+          0.24027777777777778
+        ],
+        "score": 0.014,
+        "edge_ratio": 0.986,
+        "texture_ratio": 0.986,
+        "changed_fraction": 0.001,
+        "components": 1,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-5",
+        "box": [
+          0.671875,
+          0.3680555555555556,
+          0.1171875,
+          0.24027777777777778
+        ],
+        "score": 0.013,
+        "edge_ratio": 0.977,
+        "texture_ratio": 1.002,
+        "changed_fraction": 0.001,
+        "components": 1,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-6",
+        "box": [
+          0.8203125,
+          0.3680555555555556,
+          0.12109375,
+          0.24027777777777778
+        ],
+        "score": 0.034,
+        "edge_ratio": 0.958,
+        "texture_ratio": 0.979,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-1",
+        "box": [
+          0.0546875,
+          0.6916666666666667,
+          0.12109375,
+          0.2388888888888889
+        ],
+        "score": 0.018,
+        "edge_ratio": 0.98,
+        "texture_ratio": 0.985,
+        "changed_fraction": 0.001,
+        "components": 1,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-2",
+        "box": [
+          0.21875,
+          0.6916666666666667,
+          0.1171875,
+          0.2388888888888889
+        ],
+        "score": 0.023,
+        "edge_ratio": 0.97,
+        "texture_ratio": 0.987,
+        "changed_fraction": 0.001,
+        "components": 3,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-3",
+        "box": [
+          0.37109375,
+          0.6916666666666667,
+          0.11328125,
+          0.2388888888888889
+        ],
+        "score": 0.018,
+        "edge_ratio": 0.973,
+        "texture_ratio": 0.996,
+        "changed_fraction": 0.0,
+        "components": 1,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-4",
+        "box": [
+          0.51953125,
+          0.6916666666666667,
+          0.1171875,
+          0.2388888888888889
+        ],
+        "score": 0.038,
+        "edge_ratio": 0.956,
+        "texture_ratio": 0.971,
+        "changed_fraction": 0.003,
+        "components": 6,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-5",
+        "box": [
+          0.671875,
+          0.6916666666666667,
+          0.1171875,
+          0.2388888888888889
+        ],
+        "score": 0.031,
+        "edge_ratio": 0.961,
+        "texture_ratio": 0.98,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-6",
+        "box": [
+          0.8203125,
+          0.6916666666666667,
+          0.12109375,
+          0.2388888888888889
+        ],
+        "score": 0.024,
+        "edge_ratio": 0.964,
+        "texture_ratio": 0.994,
+        "changed_fraction": 0.001,
+        "components": 2,
+        "gap": false,
+        "ambiguous": false
+      }
+    ],
+    "reason": "Possible gaps found; human review required.",
+    "duration_ms": 236.65
+  },
+  "blurred.jpg": {
+    "thresholds": {
+      "min_sharpness": 45,
+      "min_matches": 18,
+      "min_inlier_ratio": 0.45,
+      "max_reprojection_px": 2.5,
+      "gap_score": 0.48,
+      "min_changed_fraction": 0.18
+    },
+    "algorithm": "reference-occupancy-1.0",
+    "opencv": "5.0.0",
+    "quality_ok": false,
+    "diagnostics": {
+      "sharpness": 2.64,
+      "matches": 0,
+      "inlier_ratio": 0.0,
+      "reprojection_error": null
+    },
+    "candidates": [],
+    "regions": [],
+    "reason": "Image is too blurred. Hold the camera steady and rescan.",
+    "duration_ms": 84.89
+  },
+  "no-change.jpg": {
+    "thresholds": {
+      "min_sharpness": 45,
+      "min_matches": 18,
+      "min_inlier_ratio": 0.45,
+      "max_reprojection_px": 2.5,
+      "gap_score": 0.48,
+      "min_changed_fraction": 0.18
+    },
+    "algorithm": "reference-occupancy-1.0",
+    "opencv": "5.0.0",
+    "quality_ok": true,
+    "diagnostics": {
+      "sharpness": 3148.63,
+      "matches": 3379,
+      "inlier_ratio": 0.999,
+      "reprojection_error": 0.003
+    },
+    "candidates": [],
+    "regions": [
+      {
+        "id": "R1-1",
+        "box": [
+          0.0546875,
+          0.030555555555555555,
+          0.12109375,
+          0.25
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.005,
+        "texture_ratio": 0.994,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-2",
+        "box": [
+          0.21875,
+          0.030555555555555555,
+          0.1171875,
+          0.25
+        ],
+        "score": 0.0,
+        "edge_ratio": 0.999,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-3",
+        "box": [
+          0.37109375,
+          0.030555555555555555,
+          0.11328125,
+          0.25
+        ],
+        "score": 0.005,
+        "edge_ratio": 0.995,
+        "texture_ratio": 0.996,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-4",
+        "box": [
+          0.51953125,
+          0.030555555555555555,
+          0.1171875,
+          0.25
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.007,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-5",
+        "box": [
+          0.671875,
+          0.030555555555555555,
+          0.1171875,
+          0.25
+        ],
+        "score": 0.001,
+        "edge_ratio": 1.0,
+        "texture_ratio": 0.998,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R1-6",
+        "box": [
+          0.8203125,
+          0.030555555555555555,
+          0.12109375,
+          0.25
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.003,
+        "texture_ratio": 0.997,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-1",
+        "box": [
+          0.0546875,
+          0.3680555555555556,
+          0.12109375,
+          0.24027777777777778
+        ],
+        "score": 0.006,
+        "edge_ratio": 0.991,
+        "texture_ratio": 0.998,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-2",
+        "box": [
+          0.21875,
+          0.3680555555555556,
+          0.1171875,
+          0.24027777777777778
+        ],
+        "score": 0.006,
+        "edge_ratio": 0.992,
+        "texture_ratio": 0.998,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-3",
+        "box": [
+          0.37109375,
+          0.3680555555555556,
+          0.11328125,
+          0.24027777777777778
+        ],
+        "score": 0.004,
+        "edge_ratio": 0.993,
+        "texture_ratio": 0.999,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-4",
+        "box": [
+          0.51953125,
+          0.3680555555555556,
+          0.1171875,
+          0.24027777777777778
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.002,
+        "texture_ratio": 0.998,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-5",
+        "box": [
+          0.671875,
+          0.3680555555555556,
+          0.1171875,
+          0.24027777777777778
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.007,
+        "texture_ratio": 0.997,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R2-6",
+        "box": [
+          0.8203125,
+          0.3680555555555556,
+          0.12109375,
+          0.24027777777777778
+        ],
+        "score": 0.016,
+        "edge_ratio": 0.974,
+        "texture_ratio": 0.999,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-1",
+        "box": [
+          0.0546875,
+          0.6916666666666667,
+          0.12109375,
+          0.2388888888888889
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.001,
+        "texture_ratio": 0.999,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-2",
+        "box": [
+          0.21875,
+          0.6916666666666667,
+          0.1171875,
+          0.2388888888888889
+        ],
+        "score": 0.001,
+        "edge_ratio": 0.999,
+        "texture_ratio": 0.998,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-3",
+        "box": [
+          0.37109375,
+          0.6916666666666667,
+          0.11328125,
+          0.2388888888888889
+        ],
+        "score": 0.0,
+        "edge_ratio": 1.001,
+        "texture_ratio": 1.0,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-4",
+        "box": [
+          0.51953125,
+          0.6916666666666667,
+          0.1171875,
+          0.2388888888888889
+        ],
+        "score": 0.002,
+        "edge_ratio": 0.997,
+        "texture_ratio": 0.998,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-5",
+        "box": [
+          0.671875,
+          0.6916666666666667,
+          0.1171875,
+          0.2388888888888889
+        ],
+        "score": 0.002,
+        "edge_ratio": 0.998,
+        "texture_ratio": 0.997,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      },
+      {
+        "id": "R3-6",
+        "box": [
+          0.8203125,
+          0.6916666666666667,
+          0.12109375,
+          0.2388888888888889
+        ],
+        "score": 0.003,
+        "edge_ratio": 0.997,
+        "texture_ratio": 0.997,
+        "changed_fraction": 0.0,
+        "components": 0,
+        "gap": false,
+        "ambiguous": false
+      }
+    ],
+    "reason": "No significant occupancy loss detected.",
+    "duration_ms": 265.24
+  }
+}

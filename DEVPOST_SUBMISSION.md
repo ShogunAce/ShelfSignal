@@ -16,7 +16,7 @@ Upload a reference and inspection photo, define expected positions, and run Open
 
 ## How it was built
 
-React, TypeScript, Vite, Tailwind, Inter and Lucide form the workspace. FastAPI and a deterministic policy engine coordinate OpenCV 5 ORB matching, RANSAC homography, perspective warping, edge/texture comparisons, morphology and overlays. SQLite supports local use; the same Python engine runs in an AWS Lambda container with private S3 and DynamoDB. CodeBuild tests the Linux image before CloudFormation deployment. The local server signs AWS requests; credentials never enter the browser.
+React, TypeScript, Vite, Tailwind, Manrope and Lucide form the workspace. FastAPI and a deterministic policy engine coordinate OpenCV 5 ORB matching, RANSAC homography, perspective warping, edge/texture comparisons, morphology and overlays. SQLite supports local use; the same Python engine runs in an AWS Lambda container with private S3 and DynamoDB. CodeBuild tests the Linux image before CloudFormation deployment. The local server signs AWS requests; credentials never enter the browser.
 
 ## Agentic behavior
 

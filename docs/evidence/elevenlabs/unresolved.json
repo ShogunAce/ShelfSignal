@@ -1,0 +1,557 @@
+{
+  "id": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb",
+  "revision": 11,
+  "state": "UNRESOLVED",
+  "images": {
+    "reference": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/80a82b3c-8884-4742-8364-61834164bdc6/reference",
+    "image": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/d2364aa8-0b51-43df-8570-99e12476dba1/image",
+    "overlay": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/839c5788-9180-4dc8-af9d-26d70e6e3a5d/overlay.png",
+    "followup": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/451a984d-4ee9-4ca0-9cd6-409c190c3ecb/followup",
+    "verification": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/2ef6294e-b43c-4891-a617-6896b8de3a1b/verification.png"
+  },
+  "image_history": [
+    {
+      "kind": "reference",
+      "key": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/80a82b3c-8884-4742-8364-61834164bdc6/reference",
+      "bytes": 2095801,
+      "sha256": "614afa8f9606149beecb42c8b9d14f73da91b81ee578acc51a1a3fc99961b158"
+    },
+    {
+      "kind": "image",
+      "key": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/d2364aa8-0b51-43df-8570-99e12476dba1/image",
+      "bytes": 1856373,
+      "sha256": "06f92a4410abdb34f6e79ba15b072422f03f5e1d480234e3ce3dddb786abdecf"
+    },
+    {
+      "kind": "followup",
+      "key": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/451a984d-4ee9-4ca0-9cd6-409c190c3ecb/followup",
+      "bytes": 422017,
+      "sha256": "b70f3707130f2edad40afce863433e562393f4e3be8484d6badc56e43d2fe8d7"
+    }
+  ],
+  "regions": [
+    {
+      "id": "P96436",
+      "box": [
+        0.37109375,
+        0.3680555932774205,
+        0.11328125,
+        0.24027783058838864
+      ]
+    }
+  ],
+  "analysis": {
+    "thresholds": {
+      "min_sharpness": 45,
+      "min_matches": 18,
+      "min_inlier_ratio": 0.45,
+      "max_reprojection_px": 2.5,
+      "gap_score": 0.48,
+      "min_changed_fraction": 0.18
+    },
+    "algorithm": "reference-occupancy-1.0",
+    "opencv": "5.0.0",
+    "quality_ok": true,
+    "diagnostics": {
+      "sharpness": 1964.33,
+      "matches": 2187,
+      "inlier_ratio": 0.979,
+      "reprojection_error": 0.039
+    },
+    "candidates": [
+      {
+        "id": "P96436",
+        "box": [
+          0.37109375,
+          0.3680555932774205,
+          0.11328125,
+          0.24027783058838864
+        ],
+        "score": 0.881,
+        "edge_ratio": 0.011,
+        "texture_ratio": 0.281,
+        "changed_fraction": 0.504,
+        "components": 35,
+        "gap": true,
+        "ambiguous": false
+      }
+    ],
+    "regions": [
+      {
+        "id": "P96436",
+        "box": [
+          0.37109375,
+          0.3680555932774205,
+          0.11328125,
+          0.24027783058838864
+        ],
+        "score": 0.881,
+        "edge_ratio": 0.011,
+        "texture_ratio": 0.281,
+        "changed_fraction": 0.504,
+        "components": 35,
+        "gap": true,
+        "ambiguous": false
+      }
+    ],
+    "reason": "Possible gaps found; human review required.",
+    "duration_ms": 2705.31
+  },
+  "candidates": [
+    {
+      "id": "P96436",
+      "box": [
+        0.37109375,
+        0.3680555932774205,
+        0.11328125,
+        0.24027783058838864
+      ],
+      "score": 0.881,
+      "edge_ratio": 0.011,
+      "texture_ratio": 0.281,
+      "changed_fraction": 0.504,
+      "components": 35,
+      "gap": true,
+      "ambiguous": false
+    }
+  ],
+  "events": [
+    {
+      "event_id": "535a5582-df74-4bfa-808d-abe49d59d3eb",
+      "inspection_id": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb",
+      "timestamp": "2026-10-27T03:48:06.691933+00:00",
+      "tool": "create_inspection",
+      "input_references": {},
+      "observed_features": {},
+      "previous_state": "CREATED",
+      "decision": "CREATED",
+      "policy_rule": "operator_started",
+      "model_invocation": "disabled",
+      "result": "Inspection created",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "5157dca2-4239-461b-b46a-8ff74576e4ef",
+      "inspection_id": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb",
+      "timestamp": "2026-10-27T03:48:09.928545+00:00",
+      "tool": "upload_reference",
+      "input_references": {
+        "reference": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/80a82b3c-8884-4742-8364-61834164bdc6/reference"
+      },
+      "observed_features": {
+        "kind": "reference",
+        "key": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/80a82b3c-8884-4742-8364-61834164bdc6/reference",
+        "bytes": 2095801,
+        "sha256": "614afa8f9606149beecb42c8b9d14f73da91b81ee578acc51a1a3fc99961b158"
+      },
+      "previous_state": "CREATED",
+      "decision": "CREATED",
+      "policy_rule": "original_preserved",
+      "model_invocation": "disabled",
+      "result": "Original photograph preserved",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "012e29d6-8d46-41f5-bc9b-950d41bfdf73",
+      "inspection_id": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb",
+      "timestamp": "2026-10-27T03:48:14.224295+00:00",
+      "tool": "upload_image",
+      "input_references": {
+        "reference": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/80a82b3c-8884-4742-8364-61834164bdc6/reference",
+        "image": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/d2364aa8-0b51-43df-8570-99e12476dba1/image"
+      },
+      "observed_features": {
+        "kind": "image",
+        "key": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/d2364aa8-0b51-43df-8570-99e12476dba1/image",
+        "bytes": 1856373,
+        "sha256": "06f92a4410abdb34f6e79ba15b072422f03f5e1d480234e3ce3dddb786abdecf"
+      },
+      "previous_state": "CREATED",
+      "decision": "CREATED",
+      "policy_rule": "original_preserved",
+      "model_invocation": "disabled",
+      "result": "Original photograph preserved",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "bfc6157c-9c11-438b-8bee-b90b2894fda4",
+      "inspection_id": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb",
+      "timestamp": "2026-10-27T03:48:15.641446+00:00",
+      "tool": "define_positions",
+      "input_references": {
+        "reference": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/80a82b3c-8884-4742-8364-61834164bdc6/reference",
+        "image": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/d2364aa8-0b51-43df-8570-99e12476dba1/image"
+      },
+      "observed_features": {
+        "regions": [
+          {
+            "id": "P96436",
+            "box": [
+              0.37109375,
+              0.3680555932774205,
+              0.11328125,
+              0.24027783058838864
+            ]
+          }
+        ]
+      },
+      "previous_state": "CREATED",
+      "decision": "CREATED",
+      "policy_rule": "operator_annotations",
+      "model_invocation": "disabled",
+      "result": "Expected product positions saved",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "10f083f7-9f5c-43b7-ad17-71dc1cb07334",
+      "inspection_id": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb",
+      "timestamp": "2026-10-27T03:48:16.054714+00:00",
+      "tool": "analyze_shelf",
+      "input_references": {
+        "reference": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/80a82b3c-8884-4742-8364-61834164bdc6/reference",
+        "image": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/d2364aa8-0b51-43df-8570-99e12476dba1/image"
+      },
+      "observed_features": {},
+      "previous_state": "CREATED",
+      "decision": "ANALYZING",
+      "policy_rule": "begin_analysis",
+      "model_invocation": "disabled",
+      "result": "Analysis started",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "7297b60a-bdff-42b1-a7d9-6769954678f6",
+      "inspection_id": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb",
+      "timestamp": "2026-10-27T03:48:19.083657+00:00",
+      "tool": "assess_evidence_quality",
+      "input_references": {
+        "reference": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/80a82b3c-8884-4742-8364-61834164bdc6/reference",
+        "image": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/d2364aa8-0b51-43df-8570-99e12476dba1/image",
+        "overlay": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/839c5788-9180-4dc8-af9d-26d70e6e3a5d/overlay.png"
+      },
+      "observed_features": {
+        "thresholds": {
+          "min_sharpness": 45,
+          "min_matches": 18,
+          "min_inlier_ratio": 0.45,
+          "max_reprojection_px": 2.5,
+          "gap_score": 0.48,
+          "min_changed_fraction": 0.18
+        },
+        "algorithm": "reference-occupancy-1.0",
+        "opencv": "5.0.0",
+        "quality_ok": true,
+        "diagnostics": {
+          "sharpness": 1964.33,
+          "matches": 2187,
+          "inlier_ratio": 0.979,
+          "reprojection_error": 0.039
+        },
+        "candidates": [
+          {
+            "id": "P96436",
+            "box": [
+              0.37109375,
+              0.3680555932774205,
+              0.11328125,
+              0.24027783058838864
+            ],
+            "score": 0.881,
+            "edge_ratio": 0.011,
+            "texture_ratio": 0.281,
+            "changed_fraction": 0.504,
+            "components": 35,
+            "gap": true,
+            "ambiguous": false
+          }
+        ],
+        "regions": [
+          {
+            "id": "P96436",
+            "box": [
+              0.37109375,
+              0.3680555932774205,
+              0.11328125,
+              0.24027783058838864
+            ],
+            "score": 0.881,
+            "edge_ratio": 0.011,
+            "texture_ratio": 0.281,
+            "changed_fraction": 0.504,
+            "components": 35,
+            "gap": true,
+            "ambiguous": false
+          }
+        ],
+        "reason": "Possible gaps found; human review required.",
+        "duration_ms": 2705.31
+      },
+      "previous_state": "ANALYZING",
+      "decision": "EVIDENCE_READY",
+      "policy_rule": "opencv_quality_gate",
+      "model_invocation": "disabled",
+      "result": "Possible gaps found; human review required.",
+      "runtime_ms": 2705.31,
+      "error": null
+    },
+    {
+      "event_id": "015b55ef-2b3b-46d2-9e3d-c7572af630db",
+      "inspection_id": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb",
+      "timestamp": "2026-10-27T03:48:19.115861+00:00",
+      "tool": "propose_restock_task",
+      "input_references": {
+        "reference": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/80a82b3c-8884-4742-8364-61834164bdc6/reference",
+        "image": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/d2364aa8-0b51-43df-8570-99e12476dba1/image",
+        "overlay": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/839c5788-9180-4dc8-af9d-26d70e6e3a5d/overlay.png"
+      },
+      "observed_features": {},
+      "previous_state": "EVIDENCE_READY",
+      "decision": "APPROVAL_REQUIRED",
+      "policy_rule": "occupancy_loss_requires_human_review",
+      "model_invocation": "disabled",
+      "result": "Review the marked positions before approving a restock task.",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "a91c32d3-e342-41c2-9d08-a3d3d05f7863",
+      "inspection_id": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb",
+      "timestamp": "2026-10-27T03:48:23.402405+00:00",
+      "tool": "approve_or_reject_task",
+      "input_references": {
+        "reference": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/80a82b3c-8884-4742-8364-61834164bdc6/reference",
+        "image": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/d2364aa8-0b51-43df-8570-99e12476dba1/image",
+        "overlay": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/839c5788-9180-4dc8-af9d-26d70e6e3a5d/overlay.png"
+      },
+      "observed_features": {},
+      "previous_state": "APPROVAL_REQUIRED",
+      "decision": "TASK_APPROVED",
+      "policy_rule": "human_decision",
+      "model_invocation": "disabled",
+      "result": "Approved by operator",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "b6c38eaa-ebd3-436c-ada9-d5f4bf210f31",
+      "inspection_id": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb",
+      "timestamp": "2026-10-27T03:48:24.641608+00:00",
+      "tool": "upload_followup",
+      "input_references": {
+        "reference": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/80a82b3c-8884-4742-8364-61834164bdc6/reference",
+        "image": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/d2364aa8-0b51-43df-8570-99e12476dba1/image",
+        "overlay": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/839c5788-9180-4dc8-af9d-26d70e6e3a5d/overlay.png",
+        "followup": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/451a984d-4ee9-4ca0-9cd6-409c190c3ecb/followup"
+      },
+      "observed_features": {
+        "kind": "followup",
+        "key": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/451a984d-4ee9-4ca0-9cd6-409c190c3ecb/followup",
+        "bytes": 422017,
+        "sha256": "b70f3707130f2edad40afce863433e562393f4e3be8484d6badc56e43d2fe8d7"
+      },
+      "previous_state": "TASK_APPROVED",
+      "decision": "TASK_APPROVED",
+      "policy_rule": "original_preserved",
+      "model_invocation": "disabled",
+      "result": "Original photograph preserved",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "9fa80aef-6030-4d05-ab61-52f45bab0b45",
+      "inspection_id": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb",
+      "timestamp": "2026-10-27T03:48:25.723634+00:00",
+      "tool": "compare_followup",
+      "input_references": {
+        "reference": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/80a82b3c-8884-4742-8364-61834164bdc6/reference",
+        "image": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/d2364aa8-0b51-43df-8570-99e12476dba1/image",
+        "overlay": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/839c5788-9180-4dc8-af9d-26d70e6e3a5d/overlay.png",
+        "followup": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/451a984d-4ee9-4ca0-9cd6-409c190c3ecb/followup"
+      },
+      "observed_features": {},
+      "previous_state": "TASK_APPROVED",
+      "decision": "VERIFICATION_PENDING",
+      "policy_rule": "begin_verification",
+      "model_invocation": "disabled",
+      "result": "Comparing original candidate positions",
+      "runtime_ms": 0,
+      "error": null
+    },
+    {
+      "event_id": "c281dca0-c2a1-4117-b520-1c46910a2465",
+      "inspection_id": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb",
+      "timestamp": "2026-10-27T03:48:26.264015+00:00",
+      "tool": "finalize_verification",
+      "input_references": {
+        "reference": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/80a82b3c-8884-4742-8364-61834164bdc6/reference",
+        "image": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/d2364aa8-0b51-43df-8570-99e12476dba1/image",
+        "overlay": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/839c5788-9180-4dc8-af9d-26d70e6e3a5d/overlay.png",
+        "followup": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/451a984d-4ee9-4ca0-9cd6-409c190c3ecb/followup",
+        "verification": "47c74b0e-d3e3-4d8f-987f-b6d37098bdbb/2ef6294e-b43c-4891-a617-6896b8de3a1b/verification.png"
+      },
+      "observed_features": {
+        "thresholds": {
+          "min_sharpness": 45,
+          "min_matches": 18,
+          "min_inlier_ratio": 0.45,
+          "max_reprojection_px": 2.5,
+          "gap_score": 0.48,
+          "min_changed_fraction": 0.18
+        },
+        "algorithm": "reference-occupancy-1.0",
+        "opencv": "5.0.0",
+        "quality_ok": true,
+        "diagnostics": {
+          "sharpness": 1902.51,
+          "matches": 2179,
+          "inlier_ratio": 0.977,
+          "reprojection_error": 0.046
+        },
+        "candidates": [
+          {
+            "id": "P96436",
+            "box": [
+              0.37109375,
+              0.3680555932774205,
+              0.11328125,
+              0.24027783058838864
+            ],
+            "score": 0.881,
+            "edge_ratio": 0.011,
+            "texture_ratio": 0.282,
+            "changed_fraction": 0.502,
+            "components": 37,
+            "gap": true,
+            "ambiguous": false
+          }
+        ],
+        "regions": [
+          {
+            "id": "P96436",
+            "box": [
+              0.37109375,
+              0.3680555932774205,
+              0.11328125,
+              0.24027783058838864
+            ],
+            "score": 0.881,
+            "edge_ratio": 0.011,
+            "texture_ratio": 0.282,
+            "changed_fraction": 0.502,
+            "components": 37,
+            "gap": true,
+            "ambiguous": false
+          }
+        ],
+        "reason": "Possible gaps found; human review required.",
+        "duration_ms": 349.55
+      },
+      "previous_state": "VERIFICATION_PENDING",
+      "decision": "UNRESOLVED",
+      "policy_rule": "original_region_comparison",
+      "model_invocation": "disabled",
+      "result": "UNRESOLVED",
+      "runtime_ms": 349.55,
+      "error": null
+    }
+  ],
+  "task": {
+    "id": "7364d98e-172f-4ea5-af16-659d59a42272",
+    "positions": [
+      "P96436"
+    ],
+    "status": "APPROVED",
+    "physical_completion": false
+  },
+  "verification": {
+    "outcome": "UNRESOLVED",
+    "regions": [
+      {
+        "id": "P96436",
+        "before": 0.881,
+        "after": 0.881,
+        "resolved": false,
+        "features": {
+          "id": "P96436",
+          "box": [
+            0.37109375,
+            0.3680555932774205,
+            0.11328125,
+            0.24027783058838864
+          ],
+          "score": 0.881,
+          "edge_ratio": 0.011,
+          "texture_ratio": 0.282,
+          "changed_fraction": 0.502,
+          "components": 37,
+          "gap": true,
+          "ambiguous": false
+        }
+      }
+    ],
+    "evidence": {
+      "thresholds": {
+        "min_sharpness": 45,
+        "min_matches": 18,
+        "min_inlier_ratio": 0.45,
+        "max_reprojection_px": 2.5,
+        "gap_score": 0.48,
+        "min_changed_fraction": 0.18
+      },
+      "algorithm": "reference-occupancy-1.0",
+      "opencv": "5.0.0",
+      "quality_ok": true,
+      "diagnostics": {
+        "sharpness": 1902.51,
+        "matches": 2179,
+        "inlier_ratio": 0.977,
+        "reprojection_error": 0.046
+      },
+      "candidates": [
+        {
+          "id": "P96436",
+          "box": [
+            0.37109375,
+            0.3680555932774205,
+            0.11328125,
+            0.24027783058838864
+          ],
+          "score": 0.881,
+          "edge_ratio": 0.011,
+          "texture_ratio": 0.282,
+          "changed_fraction": 0.502,
+          "components": 37,
+          "gap": true,
+          "ambiguous": false
+        }
+      ],
+      "regions": [
+        {
+          "id": "P96436",
+          "box": [
+            0.37109375,
+            0.3680555932774205,
+            0.11328125,
+            0.24027783058838864
+          ],
+          "score": 0.881,
+          "edge_ratio": 0.011,
+          "texture_ratio": 0.282,
+          "changed_fraction": 0.502,
+          "components": 37,
+          "gap": true,
+          "ambiguous": false
+        }
+      ],
+      "reason": "Possible gaps found; human review required.",
+      "duration_ms": 349.55
+    },
+    "physical_completion_claimed": false
+  },
+  "expires": 1795664886
+}

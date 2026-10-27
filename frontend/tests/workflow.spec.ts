@@ -2,7 +2,8 @@ import {test,expect} from '@playwright/test';
 const evidence='../docs/evidence/'+(process.env.SHELFSIGNAL_CLOUD_TEST?'aws-':'');
 test('complete synthetic inspection, approval and visual verification',async({page})=>{
  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto('/');await expect(page.getByText(process.env.SHELFSIGNAL_CLOUD_TEST?'AWS Lambda':'Local Python')).toBeVisible();
+ await page.goto('/workspace/');await expect(page.getByText(process.env.SHELFSIGNAL_CLOUD_TEST?'AWS Lambda':'Local Python')).toBeVisible();
+ await page.getByLabel('Synthetic case').selectOption('single_gap');
  await page.getByRole('button',{name:'Load example'}).click();
  await expect(page.getByText('Original preserved')).toHaveCount(2);
  await page.getByRole('button',{name:'Analyze shelf'}).click();
@@ -24,13 +25,13 @@ test('complete synthetic inspection, approval and visual verification',async({pa
  expect(errors).toEqual([]);
 });
 test('poor quality requests rescan and never offers approval',async({page})=>{
- await page.goto('/');await page.getByLabel('Synthetic case').selectOption('blur');await page.getByRole('button',{name:'Load example'}).click();
+ await page.goto('/workspace/');await page.getByLabel('Synthetic case').selectOption('blur');await page.getByRole('button',{name:'Load example'}).click();
  await page.getByRole('button',{name:'Analyze shelf'}).click();
  await expect(page.getByRole('heading',{name:'A clearer view is needed'})).toBeVisible();
  await expect(page.getByRole('button',{name:'Approve restock task'})).toHaveCount(0);
 });
 test('manual uploads and keyboard position edits',async({page})=>{
- await page.goto('/');await page.getByLabel('Upload reference').setInputFiles('../fixtures/generated/0/reference.png');
+ await page.goto('/workspace/');await page.getByLabel('Upload reference').setInputFiles('../fixtures/generated/0/reference.png');
  await expect(page.getByText('Original preserved')).toHaveCount(1);
  await expect(page.getByLabel('Upload image',{exact:true})).toBeEnabled();
  await page.getByLabel('Upload image',{exact:true}).setInputFiles('../fixtures/generated/0/single_gap.jpg');
@@ -48,20 +49,20 @@ test('manual uploads and keyboard position edits',async({page})=>{
  await page.getByRole('button',{name:'Analyze shelf'}).click();await expect(page.getByRole('heading',{name:'Review possible gaps'})).toBeVisible();
 });
 test('mobile layout has no horizontal overflow',async({page})=>{
- await page.setViewportSize({width:390,height:844});await page.goto('/');
+ await page.setViewportSize({width:390,height:844});await page.goto('/workspace/');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBeTruthy();
  await page.screenshot({path:evidence+'ui-mobile.png',fullPage:true});
 });
 
 test('no-change evidence creates no approval proposal',async({page})=>{
- await page.goto('/');await page.getByLabel('Synthetic case').selectOption('no_change');
+ await page.goto('/workspace/');await page.getByLabel('Synthetic case').selectOption('no_change');
  await page.getByRole('button',{name:'Load example'}).click();await page.getByRole('button',{name:'Analyze shelf'}).click();
  await expect(page.getByRole('heading',{name:'No restock proposed'})).toBeVisible();
  await expect(page.getByRole('button',{name:'Approve restock task'})).toHaveCount(0);
 });
 
 test('operator can reject a proposal without creating a task',async({page})=>{
- await page.goto('/');await page.getByRole('button',{name:'Load example'}).click();
+ await page.goto('/workspace/');await page.getByRole('button',{name:'Load example'}).click();
  await page.getByRole('button',{name:'Analyze shelf'}).click();await page.getByRole('button',{name:'Reject proposal'}).click();
  await expect(page.getByRole('heading',{name:'Proposal rejected'})).toBeVisible();
  await expect(page.getByText('Human-approved task')).toHaveCount(0);

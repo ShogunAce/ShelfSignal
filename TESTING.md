@@ -21,9 +21,9 @@ npm run test:e2e
 Pop-Location
 ```
 
-Browser coverage: full synthetic approval/verification/reload, quality rescan without approval, manual uploads and region drawing, mobile overflow, no-change without a proposal, and rejection without a task. The JSON reporter at `docs/evidence/playwright.json` is authoritative for pass counts. Screenshots are real browser output, not design mockups. No test approves a real-store task.
+The landing checks cover responsive navigation from 320 to 2560 pixels, keyboard dismissal, image comparisons, workspace entry, pause, first-screen photo visibility, scroll reveals and reduced motion. Browser coverage: full synthetic approval/verification/reload, quality rescan without approval, manual uploads and region drawing, mobile overflow, no-change without a proposal, and rejection without a task. The JSON reporter at `docs/evidence/playwright.json` is authoritative for pass counts. Screenshots are real browser output, not design mockups. No test approves a real-store task.
 
-The final local suite passed all six tests. To test the actual AWS proxy already running on port 8000, use a separate PowerShell session:
+The current local suite passed all fourteen tests. Three added checks cover the built-in ElevenLabs missing-item/refill loop, no-change case and blur rejection. The full loop compares upload hashes to the generated files and checks that refreshing and changing the example picker cannot select a refill from the wrong shelf. To test the actual AWS proxy already running on port 8000, use a separate PowerShell session:
 
 ```powershell
 $env:SHELFSIGNAL_REUSE_SERVER='1'
@@ -33,7 +33,7 @@ npm --prefix frontend run test:e2e
 
 Cloud browser results are stored separately in `docs/evidence/playwright-aws.json`, with `aws-ui-*.png` screenshots. For simultaneous local tests, the supported alternate port is 5173 (`SHELFSIGNAL_TEST_PORT=5173`); arbitrary ports are intentionally rejected by the Origin allowlist. Clear these test environment variables before an ordinary local run.
 
-The final AWS browser suite also passed all six tests. Both suites include an actual keyboard coordinate change and verify that it was persisted in the execution trace. Run `scripts/release_check.py` on the deployment workstation to check the recorded gates and confirm the current backend matches the source archive used for the deployed image.
+The current AWS browser suite passed all fourteen tests on rerun. The initial attempt encountered one AWS read timeout during synthetic refill upload; its report is preserved in `docs/evidence/landing/cinematic/aws-first-attempt.json`. Both suites include an actual keyboard coordinate change and verify that it was persisted in the execution trace. Run `scripts/release_check.py` on the deployment workstation to check the recorded gates and confirm the current backend matches the source archive used for the deployed image.
 
 ## Evaluation and cloud
 

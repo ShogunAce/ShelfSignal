@@ -18,7 +18,7 @@ aws login --profile shelfsignal --region us-west-2
 .\scripts\start.ps1 -Cloud -Profile shelfsignal
 ```
 
-Open http://127.0.0.1:8000 and confirm **AWS Lambda / OpenCV 5.0.0**. Use the synthetic example workflow described in DEMO_SCRIPT.md. Run the demo on the authenticated operator workstation by arranged screen-share, or configure an appropriately authorized AWS identity on the judge's own workstation. Never share the operator's root credentials or browser session. There is no independently accessible hosted judge UI.
+Open http://127.0.0.1:8000/workspace/ and confirm **AWS Lambda / OpenCV 5.0.0**. Use the synthetic example workflow described in DEMO_SCRIPT.md. Run the demo on the authenticated operator workstation by arranged screen-share, or configure an appropriately authorized AWS identity on the judge's own workstation. Never share the operator's root credentials or browser session. There is no independently accessible hosted judge UI.
 
 The AWS login uses temporary credentials. Runtime Boto3 needs the pinned `awscrt` package. If the UI reports a proxy error, refresh `aws login`, confirm the profile/region, and restart the proxy. Do not switch to local mode while claiming an AWS demonstration.
 

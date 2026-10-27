@@ -1,21 +1,21 @@
 {
-  "checked_at": "2026-10-27T01:18:23.355043+00:00",
+  "checked_at": "2026-10-27T04:53:07.476268+00:00",
   "engineering_gates_A_to_F": "passed",
   "submission_documents": 11,
   "pytest_passed": 19,
   "browser": {
     "playwright": {
-      "startTime": "2026-10-27T01:05:11.489Z",
-      "duration": 10940.061,
-      "expected": 6,
+      "startTime": "2026-10-27T04:36:19.802Z",
+      "duration": 25078.256999999998,
+      "expected": 14,
       "skipped": 0,
       "unexpected": 0,
       "flaky": 0
     },
     "playwright-aws": {
-      "startTime": "2026-10-27T01:05:24.125Z",
-      "duration": 55209.54,
-      "expected": 6,
+      "startTime": "2026-10-27T04:40:30.431Z",
+      "duration": 104357.724,
+      "expected": 14,
       "skipped": 0,
       "unexpected": 0,
       "flaky": 0

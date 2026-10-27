@@ -1,0 +1,32 @@
+{
+  "provider": "ElevenLabs Image & Video",
+  "model_display_name": "GPT Image 2.5 Sunburst",
+  "settings": {
+    "aspect_ratio": "2:3",
+    "resolution": "1K",
+    "quality": "High",
+    "number_of_generations": 1,
+    "prompt_enhancement": false
+  },
+  "synthetic": true,
+  "purpose": "Illustrative landing media, not customer research or performance evidence.",
+  "records": {
+    "pantry": {
+      "original": "docs\\design\\landing\\pantry-original.png",
+      "sha256": "745276e3f09b8cda562f1621187419d3fef9bfc1e0b36b2d04b9e171bb57ee7f",
+      "prompt": "ShelfSignal editorial photograph: a close, beautifully composed view along a neighborhood grocery shelf with rows of green glass olive oil bottles, cream paper pantry cartons and amber jars. Products are generic with subtle fictional labels, no recognizable brands. Matte charcoal metal shelving, rich forest-green and warm ivory palette, crisp tactile packaging, soft directional store lighting with realistic shadows. Camera at shelf height, shallow perspective receding to the right, foreground bottles sharp. Quiet, precise, premium documentary retail photography, natural color, no neon, no science-fiction graphics. Vertical 2:3 composition. No people, no logos, no UI, no overlay text, no watermark. This is illustrative synthetic imagery for a reference-based shelf inspection product.",
+      "web_asset": "frontend\\public\\media\\landing\\pantry.webp"
+    },
+    "capture": {
+      "original": "docs\\design\\landing\\capture-original.png",
+      "sha256": "adda18acd74c634729a9ee2000ce42c4d1de64a6d445af38cc9ff63c0ea16b09",
+      "prompt": "ShelfSignal editorial photograph, vertical 2:3. Close over-the-shoulder crop of a grocery associate taking a shelf photograph with a plain black smartphone held horizontally in both hands. Only natural hands and a dark forest-green work shirt sleeve visible, no face. Phone screen shows a simple camera view of the same pantry shelf directly in front of it, no detection graphics, no app logos, no readable UI text. Shelves carry cream and ochre cereal cartons and green pantry bottles, with one empty product-sized gap visible. Premium documentary photography, tactile packaging, charcoal fixtures, soft warm-white shop lighting, restrained green and ivory palette, realistic perspective and anatomy, sharp phone and hands, gently soft background. Honest everyday retail work, quiet and considered, no science-fiction, no neon, no captions, no watermark. Synthetic illustrative media, not a customer testimonial.",
+      "web_asset": "frontend\\public\\media\\landing\\capture.webp"
+    }
+  },
+  "derivatives": {
+    "pantry-detail.webp": "Crop from pantry original",
+    "social-preview.jpg": "Locally typeset card with generated pantry photograph",
+    "workspace-preview.webp": "Captured separately from the actual ShelfSignal application using synthetic fixture images"
+  }
+}

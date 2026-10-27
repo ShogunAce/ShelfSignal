@@ -13,7 +13,7 @@ def main():
     if copy.exists():files.append(copy)
     files += [ROOT/name for name in ('.gitignore','.env.example','requirements.txt','requirements.lock.txt','pytest.ini')]
     excluded={'node_modules','dist','__pycache__','test-results','playwright-report','submission'}
-    for directory in ('backend','frontend','fixtures/generator','evaluation','infrastructure','scripts','docs'):
+    for directory in ('backend','frontend','fixtures/generator','fixtures/elevenlabs','evaluation','infrastructure','scripts','docs'):
         for p in (ROOT/directory).rglob('*'):
             if not p.is_file() or excluded.intersection(p.relative_to(ROOT).parts):continue
             if p.name.endswith('.tsbuildinfo') or p.suffix in {'.pyc','.zip'}:continue

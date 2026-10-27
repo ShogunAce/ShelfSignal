@@ -69,6 +69,294 @@
   },
   "suites": [
     {
+      "title": "elevenlabs.spec.ts",
+      "file": "elevenlabs.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "AI example preserves generated originals and reload uses the matching refill",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17269,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T04:40:32.199Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6f6b037ffb8c6e0b051e-eec71ecfaee8028fa371",
+          "file": "elevenlabs.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "ai_no_change routes without offering approval",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8343,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T04:40:49.615Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6f6b037ffb8c6e0b051e-d0799a5e745cd770dd04",
+          "file": "elevenlabs.spec.ts",
+          "line": 41,
+          "column": 2
+        },
+        {
+          "title": "ai_blur routes without offering approval",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16427,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T04:40:57.968Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6f6b037ffb8c6e0b051e-39d93922a8f83272eb42",
+          "file": "elevenlabs.spec.ts",
+          "line": 41,
+          "column": 2
+        }
+      ]
+    },
+    {
+      "title": "landing.spec.ts",
+      "file": "landing.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "the moving shelf is visible on the first screen without covering copy",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 660,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T04:41:14.433Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-73d4576925d3cdaace85",
+          "file": "landing.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "scroll reveals content and reduced motion leaves every section readable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2477,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T04:41:15.106Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-d891e728d5fd0beee3b4",
+          "file": "landing.spec.ts",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "landing media, evidence preview and workspace entry work",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3523,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T04:41:17.593Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-71b5ba270c37a1213cf6",
+          "file": "landing.spec.ts",
+          "line": 34,
+          "column": 1
+        },
+        {
+          "title": "mobile navigation and responsive layout remain accessible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 870,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T04:41:21.127Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-0747b0a3a46b2e3f27d2",
+          "file": "landing.spec.ts",
+          "line": 50,
+          "column": 1
+        },
+        {
+          "title": "gallery can pause and respects reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1252,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T04:41:22.009Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-8df900701a0310712ae3",
+          "file": "landing.spec.ts",
+          "line": 70,
+          "column": 1
+        }
+      ]
+    },
+    {
       "title": "workflow.spec.ts",
       "file": "workflow.spec.ts",
       "column": 0,
@@ -90,12 +378,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 23102,
+                  "duration": 26342,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-27T01:05:25.842Z",
+                  "startTime": "2026-10-27T04:41:23.304Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -124,12 +412,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5253,
+                  "duration": 4727,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-27T01:05:49.087Z",
+                  "startTime": "2026-10-27T04:41:49.655Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -139,7 +427,7 @@
           ],
           "id": "c601ceb5ecfc8efa4a14-32256b9c7534568107ff",
           "file": "workflow.spec.ts",
-          "line": 26,
+          "line": 27,
           "column": 1
         },
         {
@@ -158,12 +446,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7495,
+                  "duration": 5999,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-27T01:05:54.356Z",
+                  "startTime": "2026-10-27T04:41:54.393Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -173,7 +461,7 @@
           ],
           "id": "c601ceb5ecfc8efa4a14-390280b98a60b87d760c",
           "file": "workflow.spec.ts",
-          "line": 32,
+          "line": 33,
           "column": 1
         },
         {
@@ -192,12 +480,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 278,
+                  "duration": 298,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-27T01:06:01.865Z",
+                  "startTime": "2026-10-27T04:42:00.400Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -207,7 +495,7 @@
           ],
           "id": "c601ceb5ecfc8efa4a14-cd15dedfd5a2715dba01",
           "file": "workflow.spec.ts",
-          "line": 50,
+          "line": 51,
           "column": 1
         },
         {
@@ -226,12 +514,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 11521,
+                  "duration": 5207,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-27T01:06:02.157Z",
+                  "startTime": "2026-10-27T04:42:00.707Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -241,7 +529,7 @@
           ],
           "id": "c601ceb5ecfc8efa4a14-cf9c0f3b10877c64d197",
           "file": "workflow.spec.ts",
-          "line": 56,
+          "line": 57,
           "column": 1
         },
         {
@@ -260,12 +548,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5549,
+                  "duration": 8769,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-27T01:06:13.691Z",
+                  "startTime": "2026-10-27T04:42:05.922Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -275,7 +563,7 @@
           ],
           "id": "c601ceb5ecfc8efa4a14-1cd15722080362be2704",
           "file": "workflow.spec.ts",
-          "line": 63,
+          "line": 64,
           "column": 1
         }
       ]
@@ -283,9 +571,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-27T01:05:24.125Z",
-    "duration": 55209.54,
-    "expected": 6,
+    "startTime": "2026-10-27T04:40:30.431Z",
+    "duration": 104357.724,
+    "expected": 14,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

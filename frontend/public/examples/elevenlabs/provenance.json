@@ -1,0 +1,54 @@
+{
+  "synthetic": true,
+  "created_utc": "2026-10-27T03:45:10.956789+00:00",
+  "service": "ElevenLabs Image & Video",
+  "model_display_name": "GPT Image 2.5 Sunburst",
+  "generation_method": "Authenticated ElevenLabs browser UI; see prompts.json.",
+  "originals": {
+    "reference-original.png": "First stocked shelf generation; retained unused alternate.",
+    "reference.png": "Second stocked shelf generation; actual input to missing-item edit.",
+    "missing-item-original.png": "ElevenLabs reference-based removal edit; preserved unmodified."
+  },
+  "derivations": {
+    "missing-item.png": "Byte-identical copy of missing-item-original.png.",
+    "refilled.jpg": "Stocked reference, brightness x1.02, JPEG quality 95. Simulated refill, not an independent capture.",
+    "still-empty.jpg": "Missing-item original, brightness x0.98, JPEG quality 95.",
+    "no-change.jpg": "Stocked reference, brightness x0.99, JPEG quality 95.",
+    "blurred.jpg": "Missing-item original, Gaussian blur radius 9 pixels, JPEG quality 95."
+  },
+  "limitations": "One AI-generated shelf scene and controlled derivatives, not real-store evaluation or independent samples. AI editing changes some fine packaging details outside the removed carton. Predictions receive only image bytes and operator-style reference boxes.",
+  "files": {
+    "blurred.jpg": {
+      "sha256": "181f48f1fc6df5e550b6941b6cea7f21038c50d75d1d04249f6466b60f6248a3",
+      "bytes": 129301
+    },
+    "missing-item-original.png": {
+      "sha256": "06f92a4410abdb34f6e79ba15b072422f03f5e1d480234e3ce3dddb786abdecf",
+      "bytes": 1856373
+    },
+    "missing-item.png": {
+      "sha256": "06f92a4410abdb34f6e79ba15b072422f03f5e1d480234e3ce3dddb786abdecf",
+      "bytes": 1856373
+    },
+    "no-change.jpg": {
+      "sha256": "b3cb3363e3e0dc9ea5a7e5970611784a95079eae055ce8f0be8e52a75c127120",
+      "bytes": 479438
+    },
+    "reference-original.png": {
+      "sha256": "aee633e3d347f34d49bb7691538e8cdbb87254864ac06d9e6104f419b91798b8",
+      "bytes": 2158397
+    },
+    "reference.png": {
+      "sha256": "614afa8f9606149beecb42c8b9d14f73da91b81ee578acc51a1a3fc99961b158",
+      "bytes": 2095801
+    },
+    "refilled.jpg": {
+      "sha256": "b11161f127c698b3350143d223ac135b82e6e348b4fcac1129c04b0a4aea695f",
+      "bytes": 485189
+    },
+    "still-empty.jpg": {
+      "sha256": "b70f3707130f2edad40afce863433e562393f4e3be8484d6badc56e43d2fe8d7",
+      "bytes": 422017
+    }
+  }
+}

@@ -17,7 +17,7 @@ const errors=[];page.on('pageerror',error=>errors.push(error.message));
 const waitImages=()=>expect.poll(()=>page.locator('img').evaluateAll(xs=>xs.every(i=>i.complete&&i.naturalWidth>0)),{timeout:30000}).toBeTruthy();
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
 const recordings=[];
-await page.goto('http://127.0.0.1:8000');
+await page.goto('http://127.0.0.1:8000/workspace/');
 await expect(page.getByText('AWS Lambda')).toBeVisible();
 await page.screenshot({path:out+'/capture-start.png'});
 async function scene(id,action){
