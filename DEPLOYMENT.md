@@ -53,6 +53,12 @@ With the cloud-mode local server running:
 
 The script checks the cloud runtime, IAM-protected access, gap/no-change/blur/alignment branching, approved-task follow-up outcomes, source-image hashes in private S3, DynamoDB/S3 trace equality, image retrieval and idempotency through the proxy. It saves real inspection IDs and complete event traces. Tests use synthetic images only.
 
+## Netlify frontend hosting
+
+The root `netlify.toml` sets the base directory to `frontend`, runs `npm run build`, and publishes `dist` relative to that base. Node 22 is selected explicitly. Netlify should install the frontend's npm dependencies and run Vite; a log saying "No build steps found" or publishing from `/` means this configuration was not used. Deploy the latest `main` commit after importing the repository. The published root must contain the generated `index.html`, `assets/`, `media/`, `examples/`, and `workspace/index.html`.
+
+This publishes the landing page and frontend files only. Netlify static hosting does not run the FastAPI server or provide the server-side AWS authentication used by the inspection workflow. The hosted workspace still needs an authenticated backend integration before it can perform inspections. The existing local AWS-backed workspace remains available for the walkthrough. Do not add AWS credentials to frontend environment variables or expose the private Lambda without authentication.
+
 ## Cost, retention and cleanup
 
 CloudFormation provisions Lambda at 2048 MB with a 30-second timeout. The observed account concurrency cap is 10, with no reserved per-function concurrency. API limits are per process. Processor logs retain seven days; application S3 and DynamoDB data expire after 30 days. No AWS Budget was created; configure an operator-selected amount and email before extended use.

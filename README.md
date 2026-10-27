@@ -28,6 +28,8 @@ The landing page uses original ShelfSignal copy, ElevenLabs-generated retail ima
 
 ## Fresh installation
 
+For Netlify, the committed `netlify.toml` builds from `frontend` with `npm run build` and publishes `frontend/dist`. This hosts the landing page and frontend assets. Live inspections still require the authenticated backend described in [DEPLOYMENT.md](DEPLOYMENT.md); importing the repository into a static host does not deploy that backend.
+
 Prerequisites: Python 3.12, Node.js 22 or newer, and AWS CLI v2.32+ for cloud mode. From the project root run `scripts/setup.ps1`. It creates the virtual environment when needed, installs the exact lock file, generates fixtures, builds the UI and installs Playwright Chromium. No OpenAI key is needed. The optional LLM feature was deliberately omitted.
 
 ## Verify
