@@ -28,7 +28,7 @@ The landing page uses original ShelfSignal copy, ElevenLabs-generated retail ima
 
 ## Fresh installation
 
-For Netlify, the committed `netlify.toml` builds from `frontend` with `npm run build` and publishes `frontend/dist`. This hosts the landing page and frontend assets. Live inspections still require the authenticated backend described in [DEPLOYMENT.md](DEPLOYMENT.md); importing the repository into a static host does not deploy that backend.
+For Netlify, the committed `netlify.toml` builds from `frontend` with `npm run build` and publishes `frontend/dist`. The hosted workspace uses a separate AWS guest gateway for the bundled synthetic examples, with no account required. Each four-hour session owns its inspections. The gateway invokes the IAM-protected OpenCV processor; personal-photo uploads and account registration are not enabled in the hosted demo. Deployment and limits are described in [DEPLOYMENT.md](DEPLOYMENT.md).
 
 Prerequisites: Python 3.12, Node.js 22 or newer, and AWS CLI v2.32+ for cloud mode. From the project root run `scripts/setup.ps1`. It creates the virtual environment when needed, installs the exact lock file, generates fixtures, builds the UI and installs Playwright Chromium. No OpenAI key is needed. The optional LLM feature was deliberately omitted.
 
@@ -42,7 +42,7 @@ Prerequisites: Python 3.12, Node.js 22 or newer, and AWS CLI v2.32+ for cloud mo
 
 Local runtime: Python 3.12.15, OpenCV 5.0.0 from `opencv-python-headless==5.0.0.93`, NumPy 2.4.3. The container build rejects non-5 OpenCV and non-x86_64 architecture.
 
-Executed checks: 19 backend tests, fourteen local browser workflows, fourteen AWS browser workflows, and the real AWS storage/authentication smoke test passed. The browser suites include the ElevenLabs examples and byte-for-byte checks of their uploads and matching refill. Runtime details and complete traces are in `docs/evidence/`. A source/evidence handoff ZIP is generated with `scripts/package_submission.py` under `docs/submission/`; no credentials or user image directory are included.
+Executed checks before the guest gateway: 19 backend tests, fourteen local browser workflows, fourteen AWS browser workflows, and the real AWS storage/authentication smoke test passed. The browser suites include the ElevenLabs examples and byte-for-byte checks of their uploads and matching refill. Runtime details and complete traces are in `docs/evidence/`. A source/evidence handoff ZIP is generated with `scripts/package_submission.py` under `docs/submission/`; no credentials or user image directory are included.
 
 The measured synthetic benchmark contains 88 inspections and 24 follow-ups. Precision is 85.7%, recall 100%, and action agreement 90.9%. A flat object covering a product can look like a gap: eight such false positives remain. These numbers do not establish real-store performance. See [EVALUATION.md](EVALUATION.md), including the exact run outputs.
 

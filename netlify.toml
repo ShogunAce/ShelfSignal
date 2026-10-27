@@ -6,6 +6,14 @@
 
 [build.environment]
   NODE_VERSION = "22"
+  VITE_GUEST_DEMO = "true"
+
+# Bounded, session-isolated synthetic gateway. AWS credentials stay server-side.
+[[redirects]]
+  from = "/api/*"
+  to = "https://f1b86ifus1.execute-api.us-west-2.amazonaws.com/:splat"
+  status = 200
+  force = true
 
 # Both / and /workspace/ have their own generated index.html.
 # Do not add an SPA catch-all: it would mask missing API endpoints with HTML.

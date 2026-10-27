@@ -10,7 +10,25 @@ The smoke run passed on October 26, 2026 Pacific time: Python 3.12.15, OpenCV 5.
 
 The Function URL is `https://jxjp7jcl44devwaqapkazj662i0xsnup.lambda-url.us-west-2.on.aws/`. It is IAM-protected and is **not a public demo website**. An unsigned request is expected to return 403.
 
-## Run the judge demonstration
+## Hosted synthetic judge demonstration
+
+Open https://shelf-signals.netlify.app/workspace/. No account is required for bundled synthetic examples. Select **Load example**, **Analyze shelf**, **Approve restock task**, **Load synthetic refill**, then **Verify original regions**. Approval creates a task; only the separate comparison can visually verify its follow-up.
+
+The `shelfsignal-guest-demo` CloudFormation stack supplies a public HTTP API and a narrow gateway Lambda. Netlify proxies `/api/*` to it. A random 256-bit, HttpOnly, Secure, SameSite=Strict cookie grants a four-hour synthetic session; only its SHA-256 digest is stored. Every inspection and media read is checked against session ownership. Mutation requests require the configured website origin, but origin checks are not treated as authentication. The server supplies allowlisted fixture files and reference geometry. It never accepts user uploads, arbitrary region changes, processor paths, or fixture ground-truth labels. AWS IAM authorizes the gateway to invoke only `shelfsignal-processor`; that processor's Function URL remains private.
+
+The gateway limits each session to 25 examples, 100 actions and 500 requests per four-hour quota window. Global daily caps are 500 new sessions and 5,000 processor calls. API Gateway throttles at 10 requests/second with a burst of 20. These are abuse controls, not a guarantee of zero cost. Sessions and ownership records expire after four hours; original images and immutable processor traces retain the existing 30-day lifecycle. Refreshing an expired session starts a new demo; prior sessions cannot be recovered without an account system.
+
+Account registration and personal-photo workflows are deferred. Anyone with the public site URL can use this bounded demo, including judges. Do not describe the public URL as private or access-restricted to the team.
+
+Deploy the gateway after the private processor and generated fixtures exist:
+
+```powershell
+.\.venv\Scripts\python.exe scripts/deploy_guest_demo.py --bucket <private-build-bucket> --profile shelfsignal --region us-west-2
+```
+
+Read the completed stack's `ApiUrl` output and set the `/api/*` destination in `netlify.toml`. `VITE_GUEST_DEMO=true` selects the hosted UI. To verify the published site, run `npx playwright test --config playwright.guest.config.ts` from `frontend`. This suite uses real AWS processing and checks session isolation, original image hashes, explicit approval, refill verification, no-change/blur branches, and loading all ten cases. It writes results to `docs/evidence/netlify/guest-browser.json`.
+
+## Run the local judge demonstration
 
 ```powershell
 Set-Location C:\Users\coled\Projects\ShelfSignal
@@ -18,7 +36,7 @@ aws login --profile shelfsignal --region us-west-2
 .\scripts\start.ps1 -Cloud -Profile shelfsignal
 ```
 
-Open http://127.0.0.1:8000/workspace/ and confirm **AWS Lambda / OpenCV 5.0.0**. Use the synthetic example workflow described in DEMO_SCRIPT.md. Run the demo on the authenticated operator workstation by arranged screen-share, or configure an appropriately authorized AWS identity on the judge's own workstation. Never share the operator's root credentials or browser session. There is no independently accessible hosted judge UI.
+Open http://127.0.0.1:8000/workspace/ and confirm **AWS Lambda / OpenCV 5.0.0**. Use the synthetic example workflow described in DEMO_SCRIPT.md. Run the demo on the authenticated operator workstation by arranged screen-share, or configure an appropriately authorized AWS identity on the judge's own workstation. Never share the operator's root credentials or browser session. The hosted synthetic-only alternative above requires no workstation setup.
 
 The AWS login uses temporary credentials. Runtime Boto3 needs the pinned `awscrt` package. If the UI reports a proxy error, refresh `aws login`, confirm the profile/region, and restart the proxy. Do not switch to local mode while claiming an AWS demonstration.
 
@@ -57,7 +75,7 @@ The script checks the cloud runtime, IAM-protected access, gap/no-change/blur/al
 
 The root `netlify.toml` sets the base directory to `frontend`, runs `npm run build`, and publishes `dist` relative to that base. Node 22 is selected explicitly. Netlify should install the frontend's npm dependencies and run Vite; a log saying "No build steps found" or publishing from `/` means this configuration was not used. Deploy the latest `main` commit after importing the repository. The published root must contain the generated `index.html`, `assets/`, `media/`, `examples/`, and `workspace/index.html`.
 
-This publishes the landing page and frontend files only. Netlify static hosting does not run the FastAPI server or provide the server-side AWS authentication used by the inspection workflow. The hosted workspace still needs an authenticated backend integration before it can perform inspections. The existing local AWS-backed workspace remains available for the walkthrough. Do not add AWS credentials to frontend environment variables or expose the private Lambda without authentication.
+Netlify serves the frontend and proxies `/api/*` to the separately deployed synthetic gateway described above. It does not run FastAPI. No AWS credentials belong in frontend environment variables. The local workspace continues to support operator uploads through the existing authenticated AWS proxy.
 
 ## Cost, retention and cleanup
 
