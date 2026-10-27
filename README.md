@@ -53,6 +53,7 @@ The measured synthetic benchmark contains 88 inspections and 24 follow-ups. Prec
 - `infrastructure`: SAM service, CodeBuild container build, optional new-account bootstrap.
 - `scripts`: setup, run, tests, AWS deployment and real cloud smoke verification.
 - `docs/evidence`: executed traces, screenshots, test reports and deployment evidence.
+- `video`: Remotion motion-graphics explainer (`docs/demo/ShelfSignal-motion-demo.mp4`) built from the synthetic fixtures and measured evidence; not a screen recording.
 
 Read [DEPLOYMENT.md](DEPLOYMENT.md), [SECURITY.md](SECURITY.md), [TESTING.md](TESTING.md), [TECHNICAL_REPORT.md](TECHNICAL_REPORT.md), and [DEMO_SCRIPT.md](DEMO_SCRIPT.md). [BUILD_REVIEW.md](BUILD_REVIEW.md) separates verified gates from outstanding submission steps.
 

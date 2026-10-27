@@ -1,0 +1,23 @@
+{
+  "name": "shelfsignal-video",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render ShelfSignalDemo out/ShelfSignal-motion-demo.mp4",
+    "still": "remotion still ShelfSignalDemo out/poster.png --frame=60",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.535",
+    "@remotion/google-fonts": "4.0.535",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "remotion": "4.0.535"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "typescript": "5.9.3"
+  }
+}
