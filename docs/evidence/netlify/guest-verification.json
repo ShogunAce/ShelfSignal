@@ -1,0 +1,56 @@
+{
+  "verified_at": "2026-10-27T05:54:37.972771+00:00",
+  "site": "https://shelf-signals.netlify.app/workspace/",
+  "application_commit": "922bac4",
+  "gateway_stack": "shelfsignal-guest-demo",
+  "gateway_package_sha256": "9e45aa418c6cbdd611d807ed76bdc6bd14891441aadacd851f6075a29dc08ca2",
+  "runtime": {
+    "runtime": "AWS Lambda",
+    "opencv": "5.0.0",
+    "python": "3.12.15"
+  },
+  "unsigned_private_processor_http_status": 403,
+  "anonymous_inspection_read_http_status": 401,
+  "cross_session_inspection_read_and_approval_http_status": 404,
+  "all_ten_synthetic_cases_loaded": true,
+  "ai_and_procedural_closed_loops_verified": true,
+  "generated_original_and_refill_hashes_verified": true,
+  "local_browser_passed": 14,
+  "public_browser": {
+    "startTime": "2026-10-27T05:53:16.895Z",
+    "duration": 34754.231999999996,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "pytest": {
+    "reported_passed": 26,
+    "warnings": 2,
+    "process_exit": "Interrupted after success summary because Windows teardown remained alive",
+    "gateway_only_passed": 7,
+    "gateway_only_exit_code": 0
+  },
+  "synthetic_evaluation": {
+    "synthetic": true,
+    "sample_count": 88,
+    "seeds": 8,
+    "true_positives": 48,
+    "false_positives": 8,
+    "false_negatives": 0,
+    "precision": 0.8571428571428571,
+    "recall": 1.0,
+    "median_latency_ms": 126.645,
+    "p95_latency_ms": 164.929,
+    "branch_accuracy": 0.9090909090909091,
+    "quality_accepted": 64,
+    "region_overlap_note": "Predictions classify operator-defined regions; IoU is 1 for matched position IDs by construction, not an independent localization metric.",
+    "limitations": "Synthetic fixtures do not establish real-store performance.",
+    "verification_samples": 24,
+    "verification_accuracy": 1.0,
+    "inconclusive_correct": 8,
+    "alignment_rejections": 8
+  },
+  "personal_uploads_enabled": false,
+  "account_registration_enabled": false
+}

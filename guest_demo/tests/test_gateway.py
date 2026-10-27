@@ -1,3 +1,4 @@
+"""Guest gateway checks are independent of the private processor container."""
 import hashlib
 import json
 import time

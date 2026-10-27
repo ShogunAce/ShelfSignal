@@ -1,0 +1,17 @@
+{
+  "verified_at": "2026-10-27T05:24:57.100768+00:00",
+  "url": "https://shelf-signals.netlify.app/",
+  "source_commit": "4f5a5c3fb1dd8f0e20b8b477bfecaff35dd27d54",
+  "homepage_status": 200,
+  "rendered_title": "ShelfSignal | Evidence before action",
+  "refilled_preview_verified": true,
+  "backend_version_status": 404,
+  "scope": "Public frontend only. Authenticated inspection backend is not integrated with Netlify.",
+  "local_validation": {
+    "frontend_build": "passed",
+    "landing_browser_tests_passed": 5,
+    "backend_tests_passed": 19,
+    "synthetic_inspections": 88,
+    "synthetic_followups": 24
+  }
+}

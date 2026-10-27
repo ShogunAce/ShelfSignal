@@ -42,7 +42,7 @@ Prerequisites: Python 3.12, Node.js 22 or newer, and AWS CLI v2.32+ for cloud mo
 
 Local runtime: Python 3.12.15, OpenCV 5.0.0 from `opencv-python-headless==5.0.0.93`, NumPy 2.4.3. The container build rejects non-5 OpenCV and non-x86_64 architecture.
 
-Executed checks before the guest gateway: 19 backend tests, fourteen local browser workflows, fourteen AWS browser workflows, and the real AWS storage/authentication smoke test passed. The browser suites include the ElevenLabs examples and byte-for-byte checks of their uploads and matching refill. Runtime details and complete traces are in `docs/evidence/`. A source/evidence handoff ZIP is generated with `scripts/package_submission.py` under `docs/submission/`; no credentials or user image directory are included.
+Executed checks: 26 backend/gateway test assertions passed, fourteen local browser workflows passed, and five public Netlify guest workflows passed. The earlier fourteen AWS proxy browser workflows and real AWS storage/authentication smoke test also passed. See TESTING.md for the Windows pytest teardown caveat. The browser suites include the ElevenLabs examples and byte-for-byte checks of their uploads and matching refill. Runtime details and complete traces are in `docs/evidence/`. A source/evidence handoff ZIP is generated with `scripts/package_submission.py` under `docs/submission/`; no credentials or user image directory are included.
 
 The measured synthetic benchmark contains 88 inspections and 24 follow-ups. Precision is 85.7%, recall 100%, and action agreement 90.9%. A flat object covering a product can look like a gap: eight such false positives remain. These numbers do not establish real-store performance. See [EVALUATION.md](EVALUATION.md), including the exact run outputs.
 

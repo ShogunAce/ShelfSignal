@@ -47,6 +47,9 @@ for(const example of ['ai_single_gap','single_gap']){
   await expect(page.getByRole('heading',{name:'Visually resolved',exact:true})).toBeVisible();
   const final=await (await page.request.get(`/api/inspections/${id}`)).json();
   expect(final.events.length).toBeGreaterThan(before.events.length);
+  await expect.poll(()=>page.locator('.image-wrap img').evaluateAll(images=>images.length===3&&images.every(img=>(img as HTMLImageElement).complete&&(img as HTMLImageElement).naturalWidth>0))).toBe(true);
+  await page.locator('.image-wrap img').evaluateAll(images=>Promise.all(images.map(img=>(img as HTMLImageElement).decode())));
+  await page.getByRole('heading',{name:'Every shelf. A considered action.'}).click();
   await page.screenshot({path:`../docs/evidence/netlify/${example}-verified.png`,fullPage:true});
  });
 }
